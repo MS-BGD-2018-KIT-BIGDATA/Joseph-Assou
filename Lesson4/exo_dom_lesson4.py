@@ -15,29 +15,27 @@ import pandas as pd
 import functools as ft
 import pandas as pd
 import json as js
-import threading
-import time
-import threading
 import time
 from requests.auth import HTTPBasicAuth
 from multiprocessing import Pool
 import asyncio
 import aiohttp
-import time
 
 
 
-Token = "c4042386894ab260821a0b55fe0f99fdbe65acc3"
+
+Passwd = "DevRavimo2017@!+"
 user = "RavimoShark"
-OwnRating=[]
 contributorname = []
 contributorrating = []
 contributororigin = []
+OwnRatingAsync=[]
+compteur=0
 
 def TopContributorsByCrawling():
     
     url = "https://gist.github.com/paulmillr/2657075"
-    res = requests.get(url, auth=HTTPBasicAuth(user, Token))
+    res = requests.get(url, auth=HTTPBasicAuth(user, Passwd))
     soup = BeautifulSoup(res.text, 'html.parser')
     listContributors = soup.find_all("tr")
    
@@ -57,19 +55,21 @@ def main():
     #Parallelize code
     TopContributorsByCrawling()
     print(contributorname)
-    if __name__ == '__main__':
-        start1 = time.time()        
-        with Pool() as p:
-            p.map(GetdataForParalelizationsynch, contributorname)
-    exectime1 = time.time()-start1
-#    start2= time.time()
-#    GetdataForParalelizationAsynch(contributorname)
-#    exectime2=time.time()-start2
-    print("\nTemps execution multiprocess synchrone est", exectime1)
-#    print("\nTemps execution  asynchrone est", exectime2)
+    OwnRating=[]
+#    if __name__ == '__main__':
+#        start1 = time.time()        
+#        with Pool() as p:
+#            OwnRating=p.map(GetdataForParalelizationsynch, contributorname)
+#    exectime1 = time.time()-start1
+    start2= time.time()
+    GetdataForParalelizationAsynch(contributorname[0:2])
+    exectime2=time.time()-start2
+#    print("\nTemps execution multiprocess synchrone est", exectime1)
+    print("\nTemps execution  asynchrone est", exectime2)
     df1 = pd.DataFrame({'Name': contributorname,'Rating': contributorrating,
                        'Origin': contributororigin, 'OwnRating': OwnRating})
-    print(df1)
+    df1.set_index("OwnRating")
+    print(OwnRatingAsync)
     
     #GetUrlFromContributor(TopContributorsByCrawling())
     #print(AvgRatingByTopContributorRepo(GetData("GrahamCampbell")))
@@ -104,13 +104,17 @@ def GetUrlFromContributor(contributorname):
 
 def GetdataForParalelizationAsynch(username):
     urls=[]
-
+    AsyncRes=[]
     for u in username:
         url = "https://api.github.com/users/"+u+"/repos"
         urls.append(url)
     futures = [call_url(url) for url in urls]    
     loop = asyncio.get_event_loop()
-    loop.run_until_complete(asyncio.wait(futures))
+    done, _ = loop.run_until_complete(asyncio.wait(futures))
+    for fut in done:
+        print("return value is {}".format(fut.result()))
+    
+    
 #      url = "https://api.github.com/users/"+username+"/repos"
 #      loop = asyncio.get_event_loop()
 #      loop.run_until_complete(asyncio.wait(call_url(url)))
@@ -119,8 +123,8 @@ def GetdataForParalelizationAsynch(username):
 def GetdataForParalelizationsynch(username):
    
     url = "https://api.github.com/users/"+username+"/repos"
-    call_urlsynch(url)
- 
+    mean = call_urlsynch(url)
+    return mean
     
 def GetMeanForUser(data):
     RepoRatingList = []
@@ -130,36 +134,31 @@ def GetMeanForUser(data):
         usermean = np.mean(RepoRatingArray)
     else:
         usermean= 0
-        
-    OwnRating.append(usermean)
-
+    return usermean
 def call_urlsynch(url):
-    print('Starting {}'.format(url))
-#    
-#    data = await res.text()
-    
-    res =requests.get(url, auth=HTTPBasicAuth(user, Token))
-    if(res.ok):
-        data = js.loads(res.text or res.content)
+
+    res =requests.get(url, auth=HTTPBasicAuth(user,Passwd ))
+    if(res.status_code == 200):
+        data = js.loads(res.text)
     else:
         print("On vient de se faire dégager")
-    
-    return GetMeanForUser(data)
+    mean = GetMeanForUser(data)
+    return mean
 
 async def call_url(url):
-    print('Starting {}'.format(url))
-#    res = await requests.get(url, auth=HTTPBasicAuth(user, Token))
-#    data = await res.text()
-    
-    res = await aiohttp.get(url,auth=aiohttp.BasicAuth(user, "DevRavimo2017@!+"))
+    global compteur
+    if compteur == 150:
+        time.sleep(1)
+    res = await aiohttp.get(url,auth=aiohttp.BasicAuth(user, Passwd))
     data = await res.text()
-      
     if(res.status == 200):
         d = js.loads(str(data))
     else:
         print("On vient de se faire dégager")
-    
-    return GetMeanForUser(d)
+    mean = GetMeanForUser(d)
+    compteur += 1
+    print(mean)
+    return mean
     
     
 
