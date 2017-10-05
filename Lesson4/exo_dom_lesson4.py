@@ -29,8 +29,7 @@ user = "RavimoShark"
 contributorname = []
 contributorrating = []
 contributororigin = []
-OwnRatingAsync=[]
-compteur=0
+
 
 def TopContributorsByCrawling():
     
@@ -56,23 +55,26 @@ def main():
     TopContributorsByCrawling()
     print(contributorname)
     OwnRating=[]
+    AsyncRes = []
 #    if __name__ == '__main__':
 #        start1 = time.time()        
 #        with Pool() as p:
 #            OwnRating=p.map(GetdataForParalelizationsynch, contributorname)
 #    exectime1 = time.time()-start1
-    start2= time.time()
-    GetdataForParalelizationAsynch(contributorname[0:2])
-    exectime2=time.time()-start2
 #    print("\nTemps execution multiprocess synchrone est", exectime1)
+#    df1 = pd.DataFrame({'Name': contributorname,'Rating': contributorrating,
+#                       'Origin': contributororigin, 'OwnRating': OwnRating})
+#    time.sleep(2)
+    start2= time.time()
+    AsyncRes = GetdataForParalelizationAsynch(contributorname)
+    exectime2=time.time()-start2
+    df2 = pd.DataFrame({'Name': contributorname,'Rating': contributorrating,
+                       'Origin': contributororigin, 'OwnRating': AsyncRes})
     print("\nTemps execution  asynchrone est", exectime2)
-    df1 = pd.DataFrame({'Name': contributorname,'Rating': contributorrating,
-                       'Origin': contributororigin, 'OwnRating': OwnRating})
-    df1.set_index("OwnRating")
-    print(OwnRatingAsync)
     
-    #GetUrlFromContributor(TopContributorsByCrawling())
-    #print(AvgRatingByTopContributorRepo(GetData("GrahamCampbell")))
+#    df1.set_index("OwnRating")
+    df2.set_index("OwnRating")
+   
     
 def GetData(username):
     print(username + "\n")
@@ -109,16 +111,15 @@ def GetdataForParalelizationAsynch(username):
         url = "https://api.github.com/users/"+u+"/repos"
         urls.append(url)
     futures = [call_url(url) for url in urls]    
+    asyncio.set_event_loop(asyncio.new_event_loop())
     loop = asyncio.get_event_loop()
     done, _ = loop.run_until_complete(asyncio.wait(futures))
     for fut in done:
-        print("return value is {}".format(fut.result()))
+        AsyncRes.append(format(fut.result()))
+    loop.close()
+    return AsyncRes;
     
-    
-#      url = "https://api.github.com/users/"+username+"/repos"
-#      loop = asyncio.get_event_loop()
-#      loop.run_until_complete(asyncio.wait(call_url(url)))
-    
+
 
 def GetdataForParalelizationsynch(username):
    
@@ -146,9 +147,7 @@ def call_urlsynch(url):
     return mean
 
 async def call_url(url):
-    global compteur
-    if compteur == 150:
-        time.sleep(1)
+
     res = await aiohttp.get(url,auth=aiohttp.BasicAuth(user, Passwd))
     data = await res.text()
     if(res.status == 200):
@@ -156,13 +155,7 @@ async def call_url(url):
     else:
         print("On vient de se faire dégager")
     mean = GetMeanForUser(d)
-    compteur += 1
-    print(mean)
     return mean
     
     
-
-
 main()
-
-
