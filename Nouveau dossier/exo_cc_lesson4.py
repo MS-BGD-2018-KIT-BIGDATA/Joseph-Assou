@@ -54,7 +54,8 @@ def main():
 
 def callAPI(city):
     orig = citysource
-    dest = city(1)
+    dest = city
+    print(dest)
     url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&mode=driving&  units=imperial&key="+api_key.format(str(orig),str(dest))
     res = requests.get(url)
     if(res.ok):
@@ -62,19 +63,22 @@ def callAPI(city):
     else:
         print("On vient de se faire dégager")
     dist = data["rows"][0]["elements"][0]["distance"]["value"]
-    print (dist)
-    return int(dist)
+    print (float(dist))
+    return float(dist)
+
 def Datframe():
     CityDistance = np.arange(100*100).reshape(100,100)
+    CityD=[]
     i=0
     
     for c in contributorname:
         global citysource 
         citysource = c
         with Pool() as p:
-            CityDistance[i]=p.map(callAPI, contributorname)
-    df = pd.DataFrame(CityDistance)
-    print(df)
-
+            CityD = p.map(callAPI, contributorname)
+            CityDistance[i] = np.array(CityD)
+        i+=1     
+    print(CityDistance)
+    return CityDistance
 
 main()
