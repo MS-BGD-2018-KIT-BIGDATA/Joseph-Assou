@@ -87,7 +87,7 @@ def main():
   
     
 #    df1.set_index("OwnRating")
-    df2.set_index("OwnRating")
+    df2.sort_values("OwnRating")
     print(df2)
     
 def GetData(username):
