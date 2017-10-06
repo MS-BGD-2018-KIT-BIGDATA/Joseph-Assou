@@ -56,7 +56,8 @@ def callAPI(city):
     orig = citysource
     dest = city
     print(dest)
-    url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&mode=driving&  units=imperial&key="+api_key.format(str(orig),str(dest))
+    url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+orig+"&destinations="+dest+"&mode=driving&  units=imperial&key="+api_key
+    print(url)
     res = requests.get(url)
     if(res.ok):
          data = js.loads(res.text or res.content)
