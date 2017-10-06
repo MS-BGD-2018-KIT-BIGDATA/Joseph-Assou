@@ -26,11 +26,11 @@ import json as js
 import time
 from requests.auth import HTTPBasicAuth
 from multiprocessing import Pool
+from Walet.walestore import api_key
 import asyncio
 import aiohttp
 
 citysource=''
-api_key = 'AIzaSyCX-JieImQLw7SqnvP60nYUVAJuhkJqGoE'
 contributorname=[]
 
 def TopCity():

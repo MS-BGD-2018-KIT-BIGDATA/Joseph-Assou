@@ -20,12 +20,9 @@ from requests.auth import HTTPBasicAuth
 from multiprocessing import Pool
 import asyncio
 import aiohttp
+from Walet.walestore import Passwd, user
 
 
-
-
-Passwd = "DevRavimoIA2017@!+"
-user = "RavimoShark"
 contributorname = []
 contributorrating = []
 contributororigin = []
