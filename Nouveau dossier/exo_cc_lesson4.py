@@ -29,7 +29,7 @@ from multiprocessing import Pool
 import asyncio
 import aiohttp
 
- 
+citysource=''
 api_key = 'AIzaSyCX-JieImQLw7SqnvP60nYUVAJuhkJqGoE'
 contributorname=[]
 
@@ -53,8 +53,7 @@ def main():
     Datframe()
 
 def callAPI(city):
-    print(city)
-    orig = city(0)
+    orig = citysource
     dest = city(1)
     url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins={0}&destinations={1}&mode=driving&  units=imperial&key="+api_key.format(str(orig),str(dest))
     res = requests.get(url)
@@ -64,17 +63,16 @@ def callAPI(city):
         print("On vient de se faire dégager")
     dist = data["rows"][0]["elements"][0]["distance"]["value"]
     print (dist)
-
+    return int(dist)
 def Datframe():
     CityDistance = np.arange(100*100).reshape(100,100)
     i=0
     
     for c in contributorname:
-        params=[(c,y) for y in contributorname]
+        global citysource 
+        citysource = c
         with Pool() as p:
-            CityDistance[i]=p.map(callAPI, params)
-        i += 1
-    
+            CityDistance[i]=p.map(callAPI, contributorname)
     df = pd.DataFrame(CityDistance)
     print(df)
 
