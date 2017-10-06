@@ -24,7 +24,7 @@ import aiohttp
 
 
 
-Passwd = "DevRavimo2017@!+"
+Passwd = "DevRavimoIA2017@!+"
 user = "RavimoShark"
 contributorname = []
 contributorrating = []
@@ -56,6 +56,8 @@ def main():
     print(contributorname)
     OwnRating=[]
     AsyncRes = []
+    AsyncRes2 = []
+    AsyncRes3 = []
 #    if __name__ == '__main__':
 #        start1 = time.time()        
 #        with Pool() as p:
@@ -66,20 +68,31 @@ def main():
 #                       'Origin': contributororigin, 'OwnRating': OwnRating})
 #    time.sleep(2)
     start2= time.time()
-    AsyncRes = GetdataForParalelizationAsynch(contributorname)
+    AsyncRes = GetdataForParalelizationAsynch(contributorname[0:100:1])
+    time.sleep(0.5)
+    AsyncRes2 = GetdataForParalelizationAsynch(contributorname[101:201:1])
+    time.sleep(0.5)
+    AsyncRes3 = GetdataForParalelizationAsynch(contributorname[201::1])
     exectime2=time.time()-start2
+    print("\nTemps execution  asynchrone est", exectime2)
+    print("1st list is \n :", AsyncRes)
+    print("2nd list is \n :", AsyncRes2)
+    print("3rd list is \n :", AsyncRes3)
+    AsyncRes.extend(AsyncRes2)
+    AsyncRes.extend(AsyncRes3)
+    print(AsyncRes)
     df2 = pd.DataFrame({'Name': contributorname,'Rating': contributorrating,
                        'Origin': contributororigin, 'OwnRating': AsyncRes})
-    print("\nTemps execution  asynchrone est", exectime2)
+  
     
 #    df1.set_index("OwnRating")
     df2.set_index("OwnRating")
-   
+    print(df2)
     
 def GetData(username):
     print(username + "\n")
     url = "https://api.github.com/users/"+username+"/repos"
-    res = requests.get(url, auth=HTTPBasicAuth(user, Token))
+    res = requests.get(url, auth=HTTPBasicAuth(user, Passwd))
     if(res.ok):
          data = js.loads(res.text or res.content)
     else:
@@ -108,7 +121,9 @@ def GetdataForParalelizationAsynch(username):
     urls=[]
     AsyncRes=[]
     for u in username:
+        
         url = "https://api.github.com/users/"+u+"/repos"
+        print(url)
         urls.append(url)
     futures = [call_url(url) for url in urls]    
     asyncio.set_event_loop(asyncio.new_event_loop())
@@ -138,8 +153,9 @@ def GetMeanForUser(data):
     return usermean
 def call_urlsynch(url):
 
-    res =requests.get(url, auth=HTTPBasicAuth(user,Passwd ))
+    res =requests.get(url, auth=HTTPBasicAuth(user,Passwd))
     if(res.status_code == 200):
+        print('ok')
         data = js.loads(res.text)
     else:
         print("On vient de se faire dégager")
