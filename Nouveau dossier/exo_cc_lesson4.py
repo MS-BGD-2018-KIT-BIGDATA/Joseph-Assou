@@ -51,36 +51,44 @@ def TopCity():
 
 def main():
     print(len(TopCity()))
-    Datframe()
+    Dataframe()
 
 def callAPI(city):
     orig = citysource
     dest = city
     print(dest)
     url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+orig+"&destinations="+dest+"&mode=driving&  units=imperial&key="+w.api_key
-    print(url)
     res = requests.get(url)
     if(res.ok):
          data = js.loads(res.text or res.content)
     else:
         print("On vient de se faire dégager")
+        
     dist = data["rows"][0]["elements"][0]["distance"]["value"]
-    print (float(dist))
-    return float(dist)
+    
+    if data['status'] == 'OVER_QUERY_LIMIT' :
+        return 0
+    else:
+        print(float(dist))
+        return float(dist)
+        
 
-def Datframe():
+def Dataframe():
     CityDistance = np.arange(100*100).reshape(100,100)
-    CityD=[]
+    CityTest = np.arange(9).reshape(3,3)
+    CityD = []
     i=0
     
     for c in contributorname:
         global citysource 
         citysource = c
         with Pool() as p:
-            CityD = p.map(callAPI, contributorname)
-            CityDistance[i] = np.array(CityD)
-        i+=1     
-    print(CityDistance)
-    return CityDistance
+            CityD = p.map(callAPI, contributorname))
+            CityDistance[i] = np.asarray(CityD)
+            i =+ 1
+    df = pd.DataFrame(CityDistance, columns=contributorname)
+    df.to_csv()
+    #print(CityTest)
+    #return CityDistance
 
 main()

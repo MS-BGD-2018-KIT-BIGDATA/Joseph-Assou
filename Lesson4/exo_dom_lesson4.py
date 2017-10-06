@@ -129,8 +129,10 @@ def GetdataForParalelizationAsynch(username):
     futures = [call_url(url) for url in urls]    
     asyncio.set_event_loop(asyncio.new_event_loop())
     loop = asyncio.get_event_loop()
-    done, _ = loop.run_until_complete(asyncio.wait(futures))
-    for fut in done:
+    caca,_ = loop.run_until_complete(asyncio.wait(futures))
+    print("caca is \n", caca)
+    print("caca,_ is \n", caca,_)
+    for fut in caca:
         AsyncRes.append(format(fut.result()))
     loop.close()
     return AsyncRes;
