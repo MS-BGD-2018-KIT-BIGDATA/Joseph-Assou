@@ -20,7 +20,9 @@ from requests.auth import HTTPBasicAuth
 from multiprocessing import Pool
 import asyncio
 import aiohttp
-from Walet.walestore import Passwd, user
+import sys
+sys.path.insert(0, '/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Wallet')
+import walletstore as w
 
 
 contributorname = []
@@ -32,7 +34,7 @@ contributororigin = []
 def TopContributorsByCrawling():
     
     url = "https://gist.github.com/paulmillr/2657075"
-    res = requests.get(url, auth=HTTPBasicAuth(user, Passwd))
+    res = requests.get(url, auth=HTTPBasicAuth(w.user, w.Passwd))
     soup = BeautifulSoup(res.text, 'html.parser')
     listContributors = soup.find_all("tr")
    
@@ -50,6 +52,7 @@ def TopContributorsByCrawling():
 
 def main():
     #Parallelize code
+    
     TopContributorsByCrawling()
     print(contributorname)
     OwnRating=[]
@@ -68,9 +71,9 @@ def main():
     start2= time.time()
     AsyncRes = GetdataForParalelizationAsynch(contributorname[0:100:1])
     time.sleep(0.5)
-    AsyncRes2 = GetdataForParalelizationAsynch(contributorname[101:201:1])
+    AsyncRes2 = GetdataForParalelizationAsynch(contributorname[100:200:1])
     time.sleep(0.5)
-    AsyncRes3 = GetdataForParalelizationAsynch(contributorname[201::1])
+    AsyncRes3 = GetdataForParalelizationAsynch(contributorname[200::1])
     exectime2=time.time()-start2
     print("\nTemps execution  asynchrone est", exectime2)
     print("1st list is \n :", AsyncRes)
@@ -78,7 +81,7 @@ def main():
     print("3rd list is \n :", AsyncRes3)
     AsyncRes.extend(AsyncRes2)
     AsyncRes.extend(AsyncRes3)
-    print(AsyncRes)
+    print(len(AsyncRes))
     df2 = pd.DataFrame({'Name': contributorname,'Rating': contributorrating,
                        'Origin': contributororigin, 'OwnRating': AsyncRes})
   
@@ -90,7 +93,7 @@ def main():
 def GetData(username):
     print(username + "\n")
     url = "https://api.github.com/users/"+username+"/repos"
-    res = requests.get(url, auth=HTTPBasicAuth(user, Passwd))
+    res = requests.get(url, auth=HTTPBasicAuth(w.user, w.Passwd))
     if(res.ok):
          data = js.loads(res.text or res.content)
     else:
@@ -151,7 +154,7 @@ def GetMeanForUser(data):
     return usermean
 def call_urlsynch(url):
 
-    res =requests.get(url, auth=HTTPBasicAuth(user,Passwd))
+    res =requests.get(url, auth=HTTPBasicAuth(w.user, w.Passwd))
     if(res.status_code == 200):
         print('ok')
         data = js.loads(res.text)
@@ -162,7 +165,7 @@ def call_urlsynch(url):
 
 async def call_url(url):
 
-    res = await aiohttp.get(url,auth=aiohttp.BasicAuth(user, Passwd))
+    res = await aiohttp.get(url,auth=aiohttp.BasicAuth(w.user, w.Passwd))
     data = await res.text()
     if(res.status == 200):
         d = js.loads(str(data))

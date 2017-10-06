@@ -26,7 +26,8 @@ import json as js
 import time
 from requests.auth import HTTPBasicAuth
 from multiprocessing import Pool
-from Walet.walestore import api_key
+sys.path.insert(0, '/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Wallet')
+import walletstore as w
 import asyncio
 import aiohttp
 
@@ -56,7 +57,7 @@ def callAPI(city):
     orig = citysource
     dest = city
     print(dest)
-    url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+orig+"&destinations="+dest+"&mode=driving&  units=imperial&key="+api_key
+    url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="+orig+"&destinations="+dest+"&mode=driving&  units=imperial&key="+w.api_key
     print(url)
     res = requests.get(url)
     if(res.ok):
