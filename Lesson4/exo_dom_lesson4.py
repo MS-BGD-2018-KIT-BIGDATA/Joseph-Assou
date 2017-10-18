@@ -122,7 +122,6 @@ def GetdataForParalelizationAsynch(username):
     urls=[]
     AsyncRes=[]
     for u in username:
-        
         url = "https://api.github.com/users/"+u+"/repos"
         print(url)
         urls.append(url)
@@ -130,8 +129,8 @@ def GetdataForParalelizationAsynch(username):
     asyncio.set_event_loop(asyncio.new_event_loop())
     loop = asyncio.get_event_loop()
     caca,_ = loop.run_until_complete(asyncio.wait(futures))
-    print("caca is \n", caca)
-    print("caca,_ is \n", caca,_)
+#    print("caca is \n", caca)
+#    print("caca,_ is \n", caca,_)
     for fut in caca:
         AsyncRes.append(format(fut.result()))
     loop.close()
