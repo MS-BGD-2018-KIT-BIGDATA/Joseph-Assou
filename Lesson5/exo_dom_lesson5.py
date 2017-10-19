@@ -51,22 +51,25 @@ prixneuf=[]
 vendeurtype=[]
 desclink=[]
 description=[]
+NextLink=[]
 
 compteurBoncoin=0
 
 def getPetitesAnnonces(marque, modele, region):
-    
+   
     url ="https://www.leboncoin.fr/voitures/offres/"+region+"/?th=1&q="+ modele+"&brd="+marque
-    res = requests.get(url)
-    soup = BeautifulSoup(res.text, 'html.parser')
+    resAnnonce = requests.get(url)
+    soup = BeautifulSoup(resAnnonce.text, 'html.parser')
+    getLinkToNextPage(soup)
     soup =soup.find("section", class_="tabsContent block-white dontSwitch").find("ul")
     return soup
 
 def getPetitesAnnoncesSuite(url):
-    
+   
     print(url)
-    res = requests.get(url)
-    soup = BeautifulSoup(res.text, 'html.parser')
+    resAnnonce = requests.get(url)
+    soup = BeautifulSoup(resAnnonce.text, 'html.parser')
+#   getLinkToNextPage(soup)
     soup =soup.find("section", class_="tabsContent block-white dontSwitch").find("ul")
     return soup
 
@@ -165,14 +168,18 @@ def getTypeSeller(soup):
 def fillDataframe():
     dico =dict()
     dico = {'modele' :mod,'type':modtyp, 'année':year, 'kilometrage':km,'codepostal':loc, 'prix_vente':price, 'cote_affinée':cote,
-            'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email}
+            'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email, 'lien' : desclink, 'description':description}
     DataZoe = pd.DataFrame(dico)
     DataZoe.to_csv('/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Lesson5/DataZoe.csv',  sep=';')
     
 def getLinkToNextPage(soup):
-    soup1 = soup.find_all("div", class_="pagination_links_container")
-    link = soup1[0].find_all('a', href=True)
-    return(link[0]['href'])
+    
+    link = soup.find_all("a", class_="element page", href=True)
+    link = list(map(lambda x: str('https:'+x['href']),link))
+    print(link) 
+    NextLink.append(link)
+    print(NextLink)
+    return(link)
     
     
 def getPhoneNumber(url):
@@ -276,7 +283,9 @@ def getAllPageFeature(desc,r):
         modelfeatures = [getModelfromDesc(d),
                          getYear(listfeatures), getKM(listfeatures), getloc(listfeatures)]
         getCote(modelfeatures,r)
-        
+
+
+
 def main():
     
 
@@ -284,22 +293,20 @@ def main():
     modele = "Zoe"
     region = ["ile_de_france", "provence_alpes_cote_d_azur","aquitaine"]
     desc=[]
-    
+    i=0
     for r in region:
         souplistpa = getPetitesAnnonces(marque,modele,r)        
         getPrice(souplistpa)
         desc=getPetitesAnnonceDescLink(souplistpa)
         getAllPageFeature(desc, r)
-        lien = getLinkToNextPage(souplistpa)
-        print(lien)
         fillDataframe()
-        while lien != None:
+        while NextLink[i] != None:
             souplistpa = getPetitesAnnoncesSuite(lien)      
             getPrice(souplistpa)
             desc=getPetitesAnnonceDescLink(souplistpa)
             getAllPageFeature(desc)
-            lien = getLinkToNextPage    
             fillDataframe()
+            i+=1
    
-
+#test()
 main()
