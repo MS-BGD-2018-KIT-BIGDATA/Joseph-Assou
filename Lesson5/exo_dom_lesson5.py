@@ -64,7 +64,7 @@ def getPetitesAnnonces(marque, modele, region):
 
 def getPetitesAnnoncesSuite(url):
     
-    marque
+    print(url)
     res = requests.get(url)
     soup = BeautifulSoup(res.text, 'html.parser')
     soup =soup.find("section", class_="tabsContent block-white dontSwitch").find("ul")
@@ -167,7 +167,7 @@ def fillDataframe():
     dico = {'modele' :mod,'type':modtyp, 'année':year, 'kilometrage':km,'codepostal':loc, 'prix_vente':price, 'cote_affinée':cote,
             'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email}
     DataZoe = pd.DataFrame(dico)
-    DataZoe.to_csv('/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Lesson5/DataZoe.csv',  sep='@@@@@')
+    DataZoe.to_csv('/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Lesson5/DataZoe.csv',  sep=';')
     
 def getLinkToNextPage(soup):
     soup1 = soup.find_all("div", class_="pagination_links_container")
@@ -192,7 +192,8 @@ def getPhoneNumber(url):
               'Accept-Encoding': 'gzip, deflate, br',
               'Accept-Language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,it;q=0.2'}
     datainput = "list_id="+listeid+"&app_id=leboncoin_web_utils&key=54bb0281238b45a03f0ee695f73e704f&text=1"                                                      
-    
+    attente = np.random.randint(5,15)
+    time.sleep(attente)
     time.sleep(3)
     
 
@@ -208,6 +209,8 @@ def getPhoneNumber(url):
         compteurBoncoin+=1
     else:
         Tel = "A prendre plus tard"    
+    attente = np.random.randint(3,10)
+    time.sleep(attente)
     print(Tel)
     Telephone.append(Tel)
      
@@ -259,7 +262,8 @@ def getCote(modelfeatures,r):
 
 def getAllPageFeature(desc,r):
     listfeatures=[]
-    
+    attente = np.random.randint(5,15)
+    time.sleep(attente)
     for url in desc:
         print(url)
         soupPA = getSoupAnnonce(url)
@@ -275,6 +279,7 @@ def getAllPageFeature(desc,r):
         
 def main():
     
+
     marque = "Renault"
     modele = "Zoe"
     region = ["ile_de_france", "provence_alpes_cote_d_azur","aquitaine"]
@@ -285,7 +290,7 @@ def main():
         getPrice(souplistpa)
         desc=getPetitesAnnonceDescLink(souplistpa)
         getAllPageFeature(desc, r)
-        lien = getLinkToNextPage
+        lien = getLinkToNextPage(souplistpa)
         print(lien)
         fillDataframe()
         while lien != None:

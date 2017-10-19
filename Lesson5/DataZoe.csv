@@ -1,0 +1,71 @@
+;TypeVendeur;année;codepostal;cote_affinée;email;kilometrage;modele;prix_neuf;prix_vente;telephone;type
+0;particulier;2017;"Elisabethville 78410
+                ";12740;pascal.le-neel@renault.com;20000;Zoe;23900;15900;0631915771;40
+1;Pro Véhicules;2015;"Dourdan 91410
+                ";10994;NA;15254;Zoe;23900;10990;0164597186;INTENS
+2;Pro Véhicules;2014;"Saint-Ouen-l'Aumône 95310
+                ";9684;NA;28537;Zoe;23900;7900;0134301285;Life
+3;Pro Véhicules;2013;"Dourdan 91410
+                ";9509;NA;8751;Zoe;23900;8990;0164597186;LIFE
+4;particulier;2014;"Paris 75013
+                ";9656;NA;29000;Zoe;23900;9700;A prendre plus tard;NA
+5;particulier;2017;" 91190
+                ";13105;NA;4000;Zoe;23900;16800;A prendre plus tard;blanche
+6;Pro Véhicules;2017;"Boissise-le-Roi 77310
+                ";13156;NA;240;Zoe;23900;13990;A prendre plus tard;LIFE
+7;Pro Véhicules;2015;"Paris 75008
+                ";11167;NA;7248;Zoe;23900;10690;A prendre plus tard;LIFE
+8;Pro Véhicules;2015;"Versailles 78000
+                ";11107;NA;11480;Zoe;23900;10300;A prendre plus tard;LIFE
+9;particulier;2016;"Sannois 95110
+                ";12104;NA;5700;Zoe;23900;8900;A prendre plus tard;Life
+10;Pro Véhicules;2014;"Villemomble 93250
+                ";9363;NA;34121;Zoe;23900;10790;A prendre plus tard;Intens
+11;Pro Véhicules;2015;"Meaux 77100
+                ";11142;NA;9474;Zoe;23900;10980;A prendre plus tard;Intens
+12;Pro Véhicules;2014;"Vitry-sur-Seine 94400
+                ";10289;NA;10207;Zoe;23900;10290;A prendre plus tard;Life
+13;Pro Véhicules;2016;"Meaux 77100
+                ";12025;NA;9087;Zoe;23900;10480;A prendre plus tard;Life
+14;Pro Véhicules;2016;"Villemomble 93250
+                ";12133;NA;2000;Zoe;23900;10890;A prendre plus tard;Life
+15;Pro Véhicules;2013;"Livry-Gargan 93190
+                ";9427;NA;17900;Zoe;23900;9490;A prendre plus tard;ZEN
+16;Pro Véhicules;2014;"Montreuil 93100
+                ";9927;NA;24147;Zoe;23900;10100;A prendre plus tard;ZEN
+17;particulier;2013;"Chessy 77700
+                ";9186;NA;27500;Zoe;23900;7800;A prendre plus tard;Life
+18;Pro Véhicules;2015;"Beauchamp 95250
+                ";10673;NA;21120;Zoe;23900;10880;A prendre plus tard;Intens
+19;particulier;2013;"Créteil 94000
+                ";9300;NA;24000;Zoe;23900;10300;A prendre plus tard;NA
+20;particulier;2013;"Chelles 77500
+                ";8595;NA;39500;Zoe;23900;8900;A prendre plus tard;INTENS
+21;Pro Véhicules;2015;"Mantes-la-Ville 78711
+                ";11169;NA;7079;Zoe;23900;10890;A prendre plus tard;Life
+22;Pro Véhicules;2013;"Versailles 78000
+                ";9309;NA;23660;Zoe;23900;9200;A prendre plus tard;ZEN
+23;particulier;2013;"Feucherolles 78810
+                ";9394;NA;19900;Zoe;23900;9100;A prendre plus tard;de
+24;particulier;2014;"Paris 75012
+                ";8966;NA;49000;Zoe;23900;8990;A prendre plus tard;NA
+25;Pro Véhicules;2014;"Gagny 93220
+                ";10328;NA;2700;Zoe;23900;10490;A prendre plus tard;NA
+26;Pro Véhicules;2014;"Paris 75012
+                ";10312;NA;7039;Zoe;23900;9500;A prendre plus tard;Life
+27;Pro Véhicules;2014;"Paris 75012
+                ";9870;NA;25257;Zoe;23900;8980;A prendre plus tard;Life
+28;Pro Véhicules;2013;"Paris 75012
+                ";9478;NA;13484;Zoe;23900;8500;A prendre plus tard;Life
+29;Pro Véhicules;2013;"Boulogne-Billancourt 92100
+                ";8958;NA;32671;Zoe;23900;9800;A prendre plus tard;INTENS
+30;particulier;2013;"Paris 75010
+                ";8255;NA;47000;Zoe;23900;8300;A prendre plus tard;NA
+31;Pro Véhicules;2017;"Trappes 78190
+                ";12948;NA;6500;Zoe;23900;18500;A prendre plus tard;Zen
+32;particulier;2013;"Sevran 93270
+                ";9106;NA;29500;Zoe;23900;7950;A prendre plus tard;Intens
+33;Pro Véhicules;2013;"Orgeval 78630
+                ";9027;NA;31250;Zoe;23900;8480;A prendre plus tard;Zen
+34;Pro Véhicules;2013;"Chelles 77500
+                ";9287;NA;31451;Zoe;23900;7990;A prendre plus tard;Life
