@@ -145,14 +145,25 @@ def getContactFromDesc(desc):
     
 
 def getModelfromDesc(des):
-    mod=[]
-    print(des)
+    modeltype=['life', 'intens', 'zen']
+    mod=[] 
+    desclower = (str(des).lower())
     mod = re.search(regexModel, str(des),re.IGNORECASE)
-    print(mod)
     if mod != None:
-        t=mod[1]
+        r=mod[1]
     else:
-        t='NA'
+        r='NA'
+    
+    if r in modeltype:
+        t=r
+    elif modeltype [0] in desclower:
+        t = modeltype[0]
+    elif modeltype [1] in desclower:
+        t = modeltype[1]
+    elif modeltype [2] in desclower:
+        t = modeltype[2]
+    else:
+        t = 'NA'
     modtyp.append(t)
     return t
 
@@ -168,7 +179,7 @@ def getTypeSeller(soup):
 def fillDataframe():
     dico =dict()
     dico = {'modele' :mod,'type':modtyp, 'année':year, 'kilometrage':km,'codepostal':loc, 'prix_vente':price, 'cote_affinée':cote,
-            'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email, 'lien' : desclink, 'description':description}
+            'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email, 'lien' : desclink}
     DataZoe = pd.DataFrame(dico)
     DataZoe.to_csv('/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Lesson5/DataZoe.csv',  sep=';')
     
@@ -177,7 +188,7 @@ def getLinkToNextPage(soup):
     link = soup.find_all("a", class_="element page", href=True)
     link = list(map(lambda x: str('https:'+x['href']),link))
     print(link) 
-    NextLink.append(link)
+    NextLink.extend(link)
     print(NextLink)
     return(link)
     
@@ -200,9 +211,8 @@ def getPhoneNumber(url):
               'Accept-Language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,it;q=0.2'}
     datainput = "list_id="+listeid+"&app_id=leboncoin_web_utils&key=54bb0281238b45a03f0ee695f73e704f&text=1"                                                      
     attente = np.random.randint(5,15)
-    time.sleep(attente)
-    time.sleep(3)
-    
+#    time.sleep(attente)
+      
 
     res = requests.post(urlapi, headers=headers, data=datainput)
     if (res.status_code ==200) :
@@ -217,7 +227,7 @@ def getPhoneNumber(url):
     else:
         Tel = "A prendre plus tard"    
     attente = np.random.randint(3,10)
-    time.sleep(attente)
+#    time.sleep(attente)
     print(Tel)
     Telephone.append(Tel)
      
@@ -269,8 +279,8 @@ def getCote(modelfeatures,r):
 
 def getAllPageFeature(desc,r):
     listfeatures=[]
-    attente = np.random.randint(5,15)
-    time.sleep(attente)
+#    attente = np.random.randint(5,15)
+#    time.sleep(attente)
     for url in desc:
         print(url)
         soupPA = getSoupAnnonce(url)
@@ -300,11 +310,12 @@ def main():
         desc=getPetitesAnnonceDescLink(souplistpa)
         getAllPageFeature(desc, r)
         fillDataframe()
-        while NextLink[i] != None:
-            souplistpa = getPetitesAnnoncesSuite(lien)      
+        for link in NextLink:
+#            print(NextLink[i])
+            souplistpa = getPetitesAnnoncesSuite(link)      
             getPrice(souplistpa)
             desc=getPetitesAnnonceDescLink(souplistpa)
-            getAllPageFeature(desc)
+            getAllPageFeature(desc,r)
             fillDataframe()
             i+=1
    
