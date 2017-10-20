@@ -200,7 +200,7 @@ def getLinkToNextPage(soup):
     link = soup.find_all("a", class_="element page", href=True)
     link = list(map(lambda x: str('https:'+x['href']),link))
     print(link) 
-    NextLink.extend(link)
+    NextLink.append(link)
     print(NextLink)
     return(link)
     
@@ -321,13 +321,13 @@ def main():
         desc=getPetitesAnnonceDescLink(souplistpa)
         getAllPageFeature(desc, r)
         fillDataframe()
-        for link in NextLink:
+        for link in NextLink[i]:
             souplistpa = getPetitesAnnoncesSuite(link)      
             getPrice(souplistpa)
             desc=getPetitesAnnonceDescLink(souplistpa)
             getAllPageFeature(desc,r)
             fillDataframe()
-            i+=1
-   
+        i+=1
+        
 
 main()
