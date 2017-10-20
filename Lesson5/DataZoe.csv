@@ -1,355 +1,713 @@
-;TypeVendeur;année;codepostal;cote_affinée;email;kilometrage;lien;modele;prix_neuf;prix_vente;telephone;type
-0;particulier;2017;"Elisabethville 78410
-                ";14899;pascal.le-neel@renault.com;20000;https://www.leboncoin.fr/voitures/1321487407.htm?ca=12_s;Zoe;23900;15900;A prendre plus tard;NA
-1;Pro Véhicules;2015;"Dourdan 91410
-                ";11744;NA;15254;https://www.leboncoin.fr/voitures/1317781865.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;intens
-2;Pro Véhicules;2014;"Saint-Ouen-l'Aumône 95310
-                ";11248;NA;28537;https://www.leboncoin.fr/voitures/1321415628.htm?ca=12_s;Zoe;22600;7900;A prendre plus tard;life
-3;Pro Véhicules;2013;"Dourdan 91410
-                ";9015;NA;8751;https://www.leboncoin.fr/voitures/1317567777.htm?ca=12_s;Zoe;22600;8990;A prendre plus tard;life
-4;particulier;2014;"Paris 75013
-                ";11201;NA;29000;https://www.leboncoin.fr/voitures/1321142626.htm?ca=12_s;Zoe;22600;9700;A prendre plus tard;life
-5;particulier;2017;" 91190
-                ";13198;NA;4000;https://www.leboncoin.fr/voitures/1320868333.htm?ca=12_s;Zoe;24600;16800;A prendre plus tard;intens
+;TypeVendeur;année;codepostal;cote_affinée;email;kilometrage;lien;modele;prix_neuf;prix_vente;telephone;telfromdesc;type
+0;particulier;2017;" 91190
+                ";13331;NA;4000;https://www.leboncoin.fr/voitures/1322161583.htm?ca=12_s;Zoe;24600;16800;0675293430;NA;intens
+1;particulier;2017;"Elisabethville 78410
+                ";12740;pascal.le-neel@renault.com;20000;https://www.leboncoin.fr/voitures/1321487407.htm?ca=12_s;Zoe;23900;15900;0631915771;NA;NA
+2;Pro Véhicules;2015;"Dourdan 91410
+                ";11184;NA;15254;https://www.leboncoin.fr/voitures/1317781865.htm?ca=12_s;Zoe;24600;10990;0164597186;NA;intens
+3;Pro Véhicules;2014;"Saint-Ouen-l'Aumône 95310
+                ";9368;NA;28537;https://www.leboncoin.fr/voitures/1321415628.htm?ca=12_s;Zoe;22600;7900;0134301285;0134301285;life
+4;Pro Véhicules;2013;"Dourdan 91410
+                ";9199;NA;8751;https://www.leboncoin.fr/voitures/1317567777.htm?ca=12_s;Zoe;22600;8990;A prendre plus tard;NA;life
+5;particulier;2014;"Paris 75013
+                ";9341;NA;29000;https://www.leboncoin.fr/voitures/1321142626.htm?ca=12_s;Zoe;22600;9700;A prendre plus tard;NA;life
 6;Pro Véhicules;2017;"Boissise-le-Roi 77310
-                ";15139;NA;240;https://www.leboncoin.fr/voitures/1321153817.htm?ca=12_s;Zoe;22600;13990;A prendre plus tard;life
+                ";12726;NA;240;https://www.leboncoin.fr/voitures/1321153817.htm?ca=12_s;Zoe;22600;13990;A prendre plus tard;0160657097;life
 7;Pro Véhicules;2015;"Paris 75008
-                ";9831;NA;7248;https://www.leboncoin.fr/voitures/1174505539.htm?ca=12_s;Zoe;22600;10690;A prendre plus tard;life
+                ";10803;NA;7248;https://www.leboncoin.fr/voitures/1174505539.htm?ca=12_s;Zoe;22600;10690;A prendre plus tard;0178455073;life
 8;Pro Véhicules;2015;"Versailles 78000
-                ";9781;NA;11480;https://www.leboncoin.fr/voitures/1320775407.htm?ca=12_s;Zoe;22600;10300;A prendre plus tard;life
+                ";10744;NA;11480;https://www.leboncoin.fr/voitures/1320775407.htm?ca=12_s;Zoe;22600;10300;A prendre plus tard;0175448151;life
 9;particulier;2016;"Sannois 95110
-                ";11475;NA;5700;https://www.leboncoin.fr/voitures/1320263745.htm?ca=12_s;Zoe;22600;8900;A prendre plus tard;life
+                ";11709;NA;5700;https://www.leboncoin.fr/voitures/1320263745.htm?ca=12_s;Zoe;22600;8900;A prendre plus tard;NA;life
 10;Pro Véhicules;2014;"Villemomble 93250
-                ";8574;NA;34121;https://www.leboncoin.fr/voitures/1164673130.htm?ca=12_s;Zoe;24600;10790;A prendre plus tard;intens
+                ";9524;NA;34121;https://www.leboncoin.fr/voitures/1164673130.htm?ca=12_s;Zoe;24600;10790;A prendre plus tard;0805805802;intens
 11;Pro Véhicules;2015;"Meaux 77100
-                ";11899;NA;9474;https://www.leboncoin.fr/voitures/1180066051.htm?ca=12_s;Zoe;24600;10980;A prendre plus tard;intens
+                ";11334;NA;9474;https://www.leboncoin.fr/voitures/1180066051.htm?ca=12_s;Zoe;24600;10980;A prendre plus tard;0805805802;intens
 12;Pro Véhicules;2014;"Vitry-sur-Seine 94400
-                ";11954;NA;10207;https://www.leboncoin.fr/voitures/1179117509.htm?ca=12_s;Zoe;22600;10290;A prendre plus tard;life
+                ";9954;NA;10207;https://www.leboncoin.fr/voitures/1179117509.htm?ca=12_s;Zoe;22600;10290;A prendre plus tard;0805805802;life
 13;Pro Véhicules;2016;"Meaux 77100
-                ";11401;NA;9087;https://www.leboncoin.fr/voitures/1170785025.htm?ca=12_s;Zoe;22600;10480;A prendre plus tard;life
+                ";11633;NA;9087;https://www.leboncoin.fr/voitures/1170785025.htm?ca=12_s;Zoe;22600;10480;A prendre plus tard;0805805802;life
 14;Pro Véhicules;2016;"Villemomble 93250
-                ";11503;NA;2000;https://www.leboncoin.fr/voitures/1308004507.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;life
+                ";11737;NA;2000;https://www.leboncoin.fr/voitures/1308004507.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;0805805802;life
 15;Pro Véhicules;2013;"Livry-Gargan 93190
-                ";9302;NA;17900;https://www.leboncoin.fr/voitures/1309357022.htm?ca=12_s;Zoe;24600;9490;A prendre plus tard;intens
+                ";9590;NA;17900;https://www.leboncoin.fr/voitures/1309357022.htm?ca=12_s;Zoe;24600;9490;A prendre plus tard;NA;intens
 16;Pro Véhicules;2014;"Montreuil 93100
-                ";10224;NA;24147;https://www.leboncoin.fr/voitures/1320776484.htm?ca=12_s;Zoe;23900;10100;A prendre plus tard;zen
+                ";9927;NA;24147;https://www.leboncoin.fr/voitures/1320776484.htm?ca=12_s;Zoe;23900;10100;A prendre plus tard;0170176498;zen
 17;particulier;2013;"Chessy 77700
-                ";8708;NA;27500;https://www.leboncoin.fr/voitures/1320322876.htm?ca=12_s;Zoe;22600;7800;A prendre plus tard;life
+                ";8886;NA;27500;https://www.leboncoin.fr/voitures/1320322876.htm?ca=12_s;Zoe;22600;7800;A prendre plus tard;NA;life
 18;Pro Véhicules;2015;"Beauchamp 95250
-                ";11402;NA;21120;https://www.leboncoin.fr/voitures/1320744395.htm?ca=12_s;Zoe;24600;10880;A prendre plus tard;intens
+                ";10857;NA;21120;https://www.leboncoin.fr/voitures/1320744395.htm?ca=12_s;Zoe;24600;10880;A prendre plus tard;0175834054;intens
 19;particulier;2013;"Créteil 94000
-                ";9175;NA;24000;https://www.leboncoin.fr/voitures/1158191032.htm?ca=12_s;Zoe;24600;10300;A prendre plus tard;intens
+                ";9460;NA;24000;https://www.leboncoin.fr/voitures/1158191032.htm?ca=12_s;Zoe;24600;10300;A prendre plus tard;NA;intens
 20;particulier;2013;"Chelles 77500
-                ";8482;NA;39500;https://www.leboncoin.fr/voitures/1319311125.htm?ca=12_s;Zoe;24600;8900;A prendre plus tard;intens
+                ";8743;NA;39500;https://www.leboncoin.fr/voitures/1319311125.htm?ca=12_s;Zoe;24600;8900;A prendre plus tard;NA;intens
 21;Pro Véhicules;2015;"Mantes-la-Ville 78711
-                ";9832;NA;7079;https://www.leboncoin.fr/voitures/1318776746.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;life
+                ";10804;NA;7079;https://www.leboncoin.fr/voitures/1318776746.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;0185500387;life
 22;Pro Véhicules;2013;"Versailles 78000
-                ";9588;NA;23660;https://www.leboncoin.fr/voitures/1136394640.htm?ca=12_s;Zoe;23900;9200;A prendre plus tard;zen
+                ";9309;NA;23660;https://www.leboncoin.fr/voitures/1136394640.htm?ca=12_s;Zoe;23900;9200;A prendre plus tard;0175448151;zen
 23;particulier;2013;"Feucherolles 78810
-                ";9268;NA;19900;https://www.leboncoin.fr/voitures/1318756823.htm?ca=12_s;Zoe;24600;9100;A prendre plus tard;intens
+                ";9556;NA;19900;https://www.leboncoin.fr/voitures/1318756823.htm?ca=12_s;Zoe;24600;9100;A prendre plus tard;NA;intens
 24;particulier;2014;"Paris 75012
-                ";8211;NA;49000;https://www.leboncoin.fr/voitures/1318148431.htm?ca=12_s;Zoe;24600;8990;A prendre plus tard;intens
+                ";9121;NA;49000;https://www.leboncoin.fr/voitures/1318148431.htm?ca=12_s;Zoe;24600;8990;A prendre plus tard;NA;intens
 25;Pro Véhicules;2014;"Gagny 93220
-                ";10637;NA;2700;https://www.leboncoin.fr/voitures/1318017388.htm?ca=12_s;Zoe;23900;10490;A prendre plus tard;NA
+                ";10328;NA;2700;https://www.leboncoin.fr/voitures/1318017388.htm?ca=12_s;Zoe;23900;10490;A prendre plus tard;NA;NA
 26;Pro Véhicules;2014;"Paris 75012
-                ";11975;NA;7039;https://www.leboncoin.fr/voitures/1182442290.htm?ca=12_s;Zoe;22600;9500;A prendre plus tard;life
+                ";9975;NA;7039;https://www.leboncoin.fr/voitures/1182442290.htm?ca=12_s;Zoe;22600;9500;A prendre plus tard;0182714652;life
 27;Pro Véhicules;2014;"Paris 75012
-                ";11448;NA;25257;https://www.leboncoin.fr/voitures/1149393841.htm?ca=12_s;Zoe;22600;8980;A prendre plus tard;life
+                ";9548;NA;25257;https://www.leboncoin.fr/voitures/1149393841.htm?ca=12_s;Zoe;22600;8980;A prendre plus tard;0182714652;life
 28;Pro Véhicules;2013;"Paris 75012
-                ";8985;NA;13484;https://www.leboncoin.fr/voitures/1147612430.htm?ca=12_s;Zoe;22600;8500;A prendre plus tard;life
+                ";9169;NA;13484;https://www.leboncoin.fr/voitures/1147612430.htm?ca=12_s;Zoe;22600;8500;A prendre plus tard;0182714652;life
 29;Pro Véhicules;2013;"Boulogne-Billancourt 92100
-                ";8840;NA;32671;https://www.leboncoin.fr/voitures/1178596428.htm?ca=12_s;Zoe;24600;9800;A prendre plus tard;intens
+                ";9113;NA;32671;https://www.leboncoin.fr/voitures/1178596428.htm?ca=12_s;Zoe;24600;9800;A prendre plus tard;0174037256;intens
 30;particulier;2013;"Paris 75010
-                ";8504;NA;47000;https://www.leboncoin.fr/voitures/1317211698.htm?ca=12_s;Zoe;23900;8300;A prendre plus tard;zen
+                ";8255;NA;47000;https://www.leboncoin.fr/voitures/1317211698.htm?ca=12_s;Zoe;23900;8300;A prendre plus tard;NA;zen
 31;Pro Véhicules;2017;"Trappes 78190
-                ";15141;NA;6500;https://www.leboncoin.fr/voitures/1133616734.htm?ca=12_s;Zoe;23900;18500;A prendre plus tard;zen
+                ";12948;NA;6500;https://www.leboncoin.fr/voitures/1133616734.htm?ca=12_s;Zoe;23900;18500;A prendre plus tard;0184040214;zen
 32;particulier;2013;"Sevran 93270
-                ";8984;NA;29500;https://www.leboncoin.fr/voitures/1185131587.htm?ca=12_s;Zoe;24600;7950;A prendre plus tard;intens
+                ";9263;NA;29500;https://www.leboncoin.fr/voitures/1185131587.htm?ca=12_s;Zoe;24600;7950;A prendre plus tard;NA;intens
 33;Pro Véhicules;2013;"Orgeval 78630
-                ";9297;NA;31250;https://www.leboncoin.fr/voitures/1155689660.htm?ca=12_s;Zoe;23900;8480;A prendre plus tard;zen
+                ";9027;NA;31250;https://www.leboncoin.fr/voitures/1155689660.htm?ca=12_s;Zoe;23900;8480;A prendre plus tard;0185470460;zen
 34;Pro Véhicules;2013;"Chelles 77500
-                ";8549;NA;31451;https://www.leboncoin.fr/voitures/1109874759.htm?ca=12_s;Zoe;22600;7990;A prendre plus tard;life
+                ";8549;NA;31451;https://www.leboncoin.fr/voitures/1109874759.htm?ca=12_s;Zoe;22600;7990;A prendre plus tard;0677372750;life
 35;Pro Véhicules;2013;"Fontenay-le-Vicomte 91540
-                ";7518;NA;70896;https://www.leboncoin.fr/voitures/1314954351.htm?ca=12_s;Zoe;22600;6790;A prendre plus tard;life
+                ";7518;NA;70896;https://www.leboncoin.fr/voitures/1314954351.htm?ca=12_s;Zoe;22600;6790;A prendre plus tard;0164572000;life
 36;particulier;2010;"Fontenay-sous-Bois 94120
-                ";7108;NA;45000;https://www.leboncoin.fr/voitures/1314550590.htm?ca=12_s;Fluence;23900;9900;A prendre plus tard;NA
+                ";7108;NA;45000;https://www.leboncoin.fr/voitures/1314550590.htm?ca=12_s;Fluence;23900;9900;A prendre plus tard;0651193183;NA
 37;Pro Véhicules;2016;"Mantes-la-Ville 78711
-                ";11460;NA;6667;https://www.leboncoin.fr/voitures/1314085781.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;life
+                ";11460;NA;6667;https://www.leboncoin.fr/voitures/1314085781.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;0185500387;life
 38;Pro Véhicules;2017;"Paris 75015
-                ";15399;NA;500;https://www.leboncoin.fr/voitures/1153901361.htm?ca=12_s;Zoe;23900;16390;A prendre plus tard;zen
+                ";15399;NA;500;https://www.leboncoin.fr/voitures/1153901361.htm?ca=12_s;Zoe;23900;16390;A prendre plus tard;0184030570;zen
 39;particulier;2013;"Aulnay-sur-Mauldre 78126
-                ";8285;NA;55300;https://www.leboncoin.fr/voitures/1313301922.htm?ca=12_s;Zoe;23900;8000;A prendre plus tard;zen
+                ";8285;NA;55300;https://www.leboncoin.fr/voitures/1313301922.htm?ca=12_s;Zoe;23900;8000;A prendre plus tard;NA;zen
 40;Pro Véhicules;2015;"Melun 77000
-                ";9568;NA;17940;https://www.leboncoin.fr/voitures/1153494165.htm?ca=12_s;Zoe;22600;9900;A prendre plus tard;life
+                ";9568;NA;17940;https://www.leboncoin.fr/voitures/1153494165.htm?ca=12_s;Zoe;22600;9900;A prendre plus tard;0164393333;life
 41;Pro Véhicules;2015;"Paris 75008
-                ";10408;NA;3100;https://www.leboncoin.fr/voitures/1174505037.htm?ca=12_s;Zoe;23900;11590;A prendre plus tard;zen
+                ";10408;NA;3100;https://www.leboncoin.fr/voitures/1174505037.htm?ca=12_s;Zoe;23900;11590;A prendre plus tard;0178455073;zen
 42;Pro Véhicules;2015;"Paris 75008
-                ";10743;NA;40095;https://www.leboncoin.fr/voitures/1174505458.htm?ca=12_s;Zoe;24600;10700;A prendre plus tard;intens
+                ";10743;NA;40095;https://www.leboncoin.fr/voitures/1174505458.htm?ca=12_s;Zoe;24600;10700;A prendre plus tard;0178455073;intens
 43;Pro Véhicules;2013;"Paris 75008
-                ";8154;NA;81404;https://www.leboncoin.fr/voitures/1174505342.htm?ca=12_s;Zoe;23900;8700;A prendre plus tard;zen
+                ";8154;NA;81404;https://www.leboncoin.fr/voitures/1174505342.htm?ca=12_s;Zoe;23900;8700;A prendre plus tard;0178455073;zen
 44;particulier;2015;"Pussay 91740
-                ";10320;NA;11900;https://www.leboncoin.fr/voitures/1312154281.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;NA
+                ";10320;NA;11900;https://www.leboncoin.fr/voitures/1312154281.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;NA;NA
 45;Pro Véhicules;2014;"Paris 75008
-                ";9283;NA;18815;https://www.leboncoin.fr/voitures/1311654426.htm?ca=12_s;Zoe;24600;10900;A prendre plus tard;intens
+                ";9283;NA;18815;https://www.leboncoin.fr/voitures/1311654426.htm?ca=12_s;Zoe;24600;10900;A prendre plus tard;0178455073;intens
 46;Pro Véhicules;2015;"Courbevoie 92400
-                ";11891;NA;10014;https://www.leboncoin.fr/voitures/1311655583.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;intens
+                ";11891;NA;10014;https://www.leboncoin.fr/voitures/1311655583.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;0174704406;intens
 47;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654762.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654762.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 48;Pro Véhicules;2014;"Paris 75008
-                ";10614;NA;8184;https://www.leboncoin.fr/voitures/1311654168.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;zen
+                ";10614;NA;8184;https://www.leboncoin.fr/voitures/1311654168.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;0178455073;zen
 49;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654674.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654674.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 50;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654806.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654806.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;0160625056;intens
 51;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654839.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654839.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 52;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654664.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654664.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 53;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654684.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654684.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 54;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654659.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654659.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;0160625056;intens
 55;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654697.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654697.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 56;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654725.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654725.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 57;Pro Véhicules;2013;"Courbevoie 92400
-                ";9688;NA;19186;https://www.leboncoin.fr/voitures/1311655973.htm?ca=12_s;Zoe;23900;8790;A prendre plus tard;zen
+                ";9688;NA;19186;https://www.leboncoin.fr/voitures/1311655973.htm?ca=12_s;Zoe;23900;8790;A prendre plus tard;0174704406;zen
 58;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654795.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654795.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 59;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654735.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654735.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 60;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654831.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13249;NA;1;https://www.leboncoin.fr/voitures/1311654831.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 61;Pro Véhicules;2015;"Pantin 93500
-                ";11491;NA;19756;https://www.leboncoin.fr/voitures/1311182741.htm?ca=12_s;Zoe;24600;11990;A prendre plus tard;intens
+                ";11491;NA;19756;https://www.leboncoin.fr/voitures/1311182741.htm?ca=12_s;Zoe;24600;11990;A prendre plus tard;0174730257;intens
 62;Pro Véhicules;2016;"Versailles 78000
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1128769092.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1128769092.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;0184270396;zen
 63;particulier;2015;"Orsay 91400
-                ";11476;NA;20000;https://www.leboncoin.fr/voitures/1309416440.htm?ca=12_s;Zoe;24600;10450;A prendre plus tard;intens
+                ";11476;NA;20000;https://www.leboncoin.fr/voitures/1309416440.htm?ca=12_s;Zoe;24600;10450;A prendre plus tard;NA;intens
 64;Pro Véhicules;2013;"Nanterre 92000
-                ";8426;NA;49299;https://www.leboncoin.fr/voitures/1310686854.htm?ca=12_s;Zoe;23900;9980;A prendre plus tard;zen
+                ";8426;NA;49299;https://www.leboncoin.fr/voitures/1310686854.htm?ca=12_s;Zoe;23900;9980;A prendre plus tard;0184207324;zen
 65;Pro Véhicules;2014;"Courbevoie 92400
-                ";11991;NA;2759;https://www.leboncoin.fr/voitures/1128769008.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;life
+                ";11991;NA;2759;https://www.leboncoin.fr/voitures/1128769008.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0174704406;life
 66;Pro Véhicules;2016;"Montreuil 93100
-                ";12676;NA;6130;https://www.leboncoin.fr/voitures/1049170770.htm?ca=12_s;Zoe;24600;12990;A prendre plus tard;intens
+                ";12676;NA;6130;https://www.leboncoin.fr/voitures/1049170770.htm?ca=12_s;Zoe;24600;12990;A prendre plus tard;0170176498;intens
 67;Pro Véhicules;2016;"Versailles 78000
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1128769061.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1128769061.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;0184270396;zen
 68;particulier;2017;"Arpajon 91290
-                ";15071;NA;7400;https://www.leboncoin.fr/voitures/1310153601.htm?ca=12_s;Zoe;23900;16800;A prendre plus tard;zen
+                ";15071;NA;7400;https://www.leboncoin.fr/voitures/1310153601.htm?ca=12_s;Zoe;23900;16800;A prendre plus tard;NA;zen
 69;Pro Véhicules;2014;"Nanterre 92000
-                ";10891;NA;33853;https://www.leboncoin.fr/voitures/1309668385.htm?ca=12_s;Zoe;22600;9980;A prendre plus tard;life
+                ";10891;NA;33853;https://www.leboncoin.fr/voitures/1309668385.htm?ca=12_s;Zoe;22600;9980;A prendre plus tard;0184207324;life
 70;Pro Véhicules;2016;"Paris 75015
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1170361076.htm?ca=12_s;Zoe;23900;10390;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1170361076.htm?ca=12_s;Zoe;23900;10390;A prendre plus tard;0184030570;zen
 71;Pro Véhicules;2016;"Paris 75015
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1170361118.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1170361118.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
 72;Pro Véhicules;2016;"Paris 75015
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1170361094.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1170361094.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;0184030570;zen
 73;Pro Véhicules;2014;"Versailles 78000
-                ";11302;NA;27582;https://www.leboncoin.fr/voitures/1136394587.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;life
+                ";11302;NA;27582;https://www.leboncoin.fr/voitures/1136394587.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0175448151;life
 74;Pro Véhicules;2014;"Courbevoie 92400
-                ";9347;NA;15888;https://www.leboncoin.fr/voitures/1148864542.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;intens
+                ";9347;NA;15888;https://www.leboncoin.fr/voitures/1148864542.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;0174704406;intens
 75;particulier;2017;"Périgny 94520
-                ";14899;NA;17800;https://www.leboncoin.fr/voitures/1306769563.htm?ca=12_s;Zoe;23900;15000;A prendre plus tard;NA
+                ";14899;NA;17800;https://www.leboncoin.fr/voitures/1306769563.htm?ca=12_s;Zoe;23900;15000;A prendre plus tard;NA;NA
 76;Pro Véhicules;2015;"Paris 75012
-                ";9493;NA;19438;https://www.leboncoin.fr/voitures/1147612495.htm?ca=12_s;Zoe;22600;9500;A prendre plus tard;life
+                ";9493;NA;19438;https://www.leboncoin.fr/voitures/1147612495.htm?ca=12_s;Zoe;22600;9500;A prendre plus tard;0182714652;life
 77;Pro Véhicules;2013;"Courbevoie 92400
-                ";9015;NA;8800;https://www.leboncoin.fr/voitures/1101078242.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;life
+                ";9015;NA;8800;https://www.leboncoin.fr/voitures/1101078242.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0174704406;life
 78;Pro Véhicules;2016;"Paris 75015
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1167828367.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1167828367.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
 79;Pro Véhicules;2014;"Les Ulis 91940
-                ";11016;NA;31872;https://www.leboncoin.fr/voitures/1171143468.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;life
+                ";11016;NA;31872;https://www.leboncoin.fr/voitures/1171143468.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0160926972;life
 80;Pro Véhicules;2013;"Versailles 78000
-                ";8170;NA;70102;https://www.leboncoin.fr/voitures/1303806454.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;zen
+                ";8170;NA;70102;https://www.leboncoin.fr/voitures/1303806454.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;0175448151;zen
 81;Pro Véhicules;2014;"Montreuil 93100
-                ";11041;NA;31425;https://www.leboncoin.fr/voitures/1178596024.htm?ca=12_s;Zoe;22600;9100;A prendre plus tard;life
+                ";11041;NA;31425;https://www.leboncoin.fr/voitures/1178596024.htm?ca=12_s;Zoe;22600;9100;A prendre plus tard;0170176498;life
 82;Pro Véhicules;2014;"Versailles 78000
-                ";10998;NA;32203;https://www.leboncoin.fr/voitures/1303298657.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;life
+                ";10998;NA;32203;https://www.leboncoin.fr/voitures/1303298657.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0175448151;life
 83;Pro Véhicules;2014;"Le Perreux-sur-Marne 94170
-                ";10542;NA;14497;https://www.leboncoin.fr/voitures/1166590040.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;NA
+                ";10542;NA;14497;https://www.leboncoin.fr/voitures/1166590040.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;0143246174;NA
 84;Pro Véhicules;2014;"Versailles 78000
-                ";10391;NA;20359;https://www.leboncoin.fr/voitures/1303298374.htm?ca=12_s;Zoe;23900;10400;A prendre plus tard;zen
+                ";10391;NA;20359;https://www.leboncoin.fr/voitures/1303298374.htm?ca=12_s;Zoe;23900;10400;A prendre plus tard;0175448151;zen
 85;Pro Véhicules;2016;"Chilly-Mazarin 91380
-                ";14278;NA;5975;https://www.leboncoin.fr/voitures/1166018156.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;zen
+                ";14278;NA;5975;https://www.leboncoin.fr/voitures/1166018156.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;0175448166;zen
 86;Pro Véhicules;2016;"Fresnes 94260
-                ";14278;NA;5975;https://www.leboncoin.fr/voitures/1166018166.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;zen
+                ";14278;NA;5975;https://www.leboncoin.fr/voitures/1166018166.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;0175448164;zen
 87;Pro Véhicules;2014;"Fresnes 94260
-                ";11908;NA;12658;https://www.leboncoin.fr/voitures/1187231493.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;life
+                ";11908;NA;12658;https://www.leboncoin.fr/voitures/1187231493.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0175448164;life
 88;Pro Véhicules;2014;"Chilly-Mazarin 91380
-                ";11908;NA;12658;https://www.leboncoin.fr/voitures/1187231658.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;life
+                ";11908;NA;12658;https://www.leboncoin.fr/voitures/1187231658.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0175448166;life
 89;Pro Véhicules;2016;"Paris 75008
-                ";12561;NA;10000;https://www.leboncoin.fr/voitures/1120100372.htm?ca=12_s;Zoe;24600;14000;A prendre plus tard;intens
+                ";12561;NA;10000;https://www.leboncoin.fr/voitures/1120100372.htm?ca=12_s;Zoe;24600;14000;A prendre plus tard;0184030235;intens
 90;Pro Véhicules;2015;"Paris 75008
-                ";11701;NA;16134;https://www.leboncoin.fr/voitures/1164288784.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;intens
+                ";11701;NA;16134;https://www.leboncoin.fr/voitures/1164288784.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;0178455073;intens
 91;Pro Véhicules;2014;"Chelles 77500
-                ";9534;NA;36385;https://www.leboncoin.fr/voitures/1164238082.htm?ca=12_s;Zoe;23900;10100;A prendre plus tard;zen
+                ";9534;NA;36385;https://www.leboncoin.fr/voitures/1164238082.htm?ca=12_s;Zoe;23900;10100;A prendre plus tard;0677372750;zen
 92;Pro Véhicules;2016;"Paris 75015
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1186775046.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1186775046.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;0184030570;zen
 93;Pro Véhicules;2014;"Paris 75012
-                ";11666;NA;21264;https://www.leboncoin.fr/voitures/1154896368.htm?ca=12_s;Zoe;22600;8980;A prendre plus tard;life
+                ";11666;NA;21264;https://www.leboncoin.fr/voitures/1154896368.htm?ca=12_s;Zoe;22600;8980;A prendre plus tard;0182714652;life
 94;Pro Véhicules;2014;"Boulogne-Billancourt 92100
-                ";11660;NA;21430;https://www.leboncoin.fr/voitures/1186340864.htm?ca=12_s;Zoe;22600;10300;A prendre plus tard;life
+                ";11660;NA;21430;https://www.leboncoin.fr/voitures/1186340864.htm?ca=12_s;Zoe;22600;10300;A prendre plus tard;0174037256;life
 95;Pro Véhicules;2015;"Boulogne-Billancourt 92100
-                ";10041;NA;19157;https://www.leboncoin.fr/voitures/1186340768.htm?ca=12_s;Zoe;23900;11700;A prendre plus tard;zen
+                ";10041;NA;19157;https://www.leboncoin.fr/voitures/1186340768.htm?ca=12_s;Zoe;23900;11700;A prendre plus tard;0174037256;zen
 96;Pro Véhicules;2014;"Chelles 77500
-                ";11240;NA;28664;https://www.leboncoin.fr/voitures/1163364537.htm?ca=12_s;Zoe;22600;10600;A prendre plus tard;life
+                ";11240;NA;28664;https://www.leboncoin.fr/voitures/1163364537.htm?ca=12_s;Zoe;22600;10600;A prendre plus tard;0677372750;life
 97;particulier;2015;"Paris 75116
-                ";11940;NA;6000;https://www.leboncoin.fr/voitures/1184849743.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;intens
+                ";11940;NA;6000;https://www.leboncoin.fr/voitures/1184849743.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;NA;intens
 98;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";15400;NA;1;https://www.leboncoin.fr/voitures/1183788805.htm?ca=12_s;Zoe;23900;16480;A prendre plus tard;zen
+                ";15400;NA;1;https://www.leboncoin.fr/voitures/1183788805.htm?ca=12_s;Zoe;23900;16480;A prendre plus tard;0160625056;zen
 99;Pro Véhicules;2014;"Pantin 93500
-                ";9131;NA;23276;https://www.leboncoin.fr/voitures/1183337869.htm?ca=12_s;Zoe;24600;10590;A prendre plus tard;intens
+                ";9131;NA;23276;https://www.leboncoin.fr/voitures/1183337869.htm?ca=12_s;Zoe;24600;10590;A prendre plus tard;0174730257;intens
 100;particulier;2015;"Saint-Soupplets 77165
-                ";9340;NA;65000;https://www.leboncoin.fr/voitures/1183091992.htm?ca=12_s;Zoe;23900;10500;A prendre plus tard;NA
+                ";9340;NA;65000;https://www.leboncoin.fr/voitures/1183091992.htm?ca=12_s;Zoe;23900;10500;A prendre plus tard;NA;NA
 101;Pro Véhicules;2014;"Noisiel 77186
-                ";9926;NA;29306;https://www.leboncoin.fr/voitures/1182420995.htm?ca=12_s;Zoe;23900;10900;A prendre plus tard;zen
+                ";9926;NA;29306;https://www.leboncoin.fr/voitures/1182420995.htm?ca=12_s;Zoe;23900;10900;A prendre plus tard;0160059293;zen
 102;Pro Véhicules;2016;"Pantin 93500
-                ";14271;NA;6400;https://www.leboncoin.fr/voitures/1182361545.htm?ca=12_s;Zoe;23900;12999;A prendre plus tard;zen
+                ";14271;NA;6400;https://www.leboncoin.fr/voitures/1182361545.htm?ca=12_s;Zoe;23900;12999;A prendre plus tard;0183799581;zen
 103;Pro Véhicules;2016;"Paris 75015
-                ";14317;NA;100;https://www.leboncoin.fr/voitures/1138649404.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;zen
+                ";14317;NA;100;https://www.leboncoin.fr/voitures/1138649404.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
 104;Pro Véhicules;2014;"Persan 95340
-                ";10396;NA;20205;https://www.leboncoin.fr/voitures/1180933261.htm?ca=12_s;Zoe;23900;10490;A prendre plus tard;zen
+                ";10396;NA;20205;https://www.leboncoin.fr/voitures/1180933261.htm?ca=12_s;Zoe;23900;10490;A prendre plus tard;0171025422;zen
 105;Pro Véhicules;2016;"Chelles 77500
-                ";11505;NA;1410;https://www.leboncoin.fr/voitures/1089980725.htm?ca=12_s;Zoe;22600;13990;A prendre plus tard;life
+                ";11505;NA;1410;https://www.leboncoin.fr/voitures/1089980725.htm?ca=12_s;Zoe;22600;13990;A prendre plus tard;0677372750;life
 106;Pro Véhicules;2016;"Paris 75008
-                ";12227;NA;15000;https://www.leboncoin.fr/voitures/1159162168.htm?ca=12_s;Zoe;24600;14100;A prendre plus tard;intens
-107;particulier;2016;"Aubignan 84810
-                ";14531;NA;7609;https://www.leboncoin.fr/voitures/1320914417.htm?ca=21_s;Zoe;23900;14000;A prendre plus tard;zen
-108;Pro Véhicules;2016;"Nice 06200
-                ";12862;NA;9000;https://www.leboncoin.fr/voitures/1321281277.htm?ca=21_s;Zoe;24600;12900;A prendre plus tard;intens
-109;Pro Véhicules;2016;"Orange 84100
-                ";11681;NA;7456;https://www.leboncoin.fr/voitures/1320869772.htm?ca=21_s;Zoe;22600;10900;A prendre plus tard;life
-110;Pro Véhicules;2013;"Manosque 04100
-                ";9541;NA;13976;https://www.leboncoin.fr/voitures/1314423304.htm?ca=21_s;Zoe;24600;8990;A prendre plus tard;intens
-111;Pro Véhicules;2015;"Manosque 04100
-                ";9720;NA;18768;https://www.leboncoin.fr/voitures/1311159943.htm?ca=21_s;Zoe;22600;9990;A prendre plus tard;life
-112;Pro Véhicules;2014;"Hyères 83400
-                ";8899;NA;31200;https://www.leboncoin.fr/voitures/1320604132.htm?ca=21_s;Zoe;24600;9990;A prendre plus tard;intens
-113;Pro Véhicules;2016;"Marignane 13700
-                ";11662;NA;8184;https://www.leboncoin.fr/voitures/1167475798.htm?ca=21_s;Zoe;22600;11390;A prendre plus tard;life
-114;Pro Véhicules;2014;"Aix-en-Provence 13100
-                ";11361;NA;30219;https://www.leboncoin.fr/voitures/1320784888.htm?ca=21_s;Zoe;22600;9490;A prendre plus tard;life
-115;Pro Véhicules;2016;"Marignane 13700
-                ";12740;NA;11457;https://www.leboncoin.fr/voitures/1320814059.htm?ca=21_s;Zoe;24600;10690;A prendre plus tard;intens
-116;Pro Véhicules;2013;"Roquebrune-sur-Argens 83520
-                ";8559;NA;41370;https://www.leboncoin.fr/voitures/1187360909.htm?ca=21_s;Zoe;24600;8290;A prendre plus tard;intens
-117;Pro Véhicules;2014;"Grasse 06130
-                ";12135;NA;13906;https://www.leboncoin.fr/voitures/1320772955.htm?ca=21_s;Zoe;22600;9390;A prendre plus tard;life
-118;Pro Véhicules;2015;"Salon-de-Provence 13300
-                ";10957;NA;41642;https://www.leboncoin.fr/voitures/1319149752.htm?ca=21_s;Zoe;24600;9990;A prendre plus tard;intens
-119;Pro Véhicules;2015;"Antibes 06600
-                ";9906;NA;14351;https://www.leboncoin.fr/voitures/1319117065.htm?ca=21_s;Zoe;22600;10490;A prendre plus tard;life
-120;Pro Véhicules;2013;"Aubagne 13400
-                ";8800;NA;36812;https://www.leboncoin.fr/voitures/1179528453.htm?ca=21_s;Zoe;24600;9990;A prendre plus tard;intens
-121;Pro Véhicules;2014;"Salon-de-Provence 13300
-                ";9437;NA;47822;https://www.leboncoin.fr/voitures/1179546119.htm?ca=21_s;Zoe;23900;8990;A prendre plus tard;zen
-122;Pro Véhicules;2014;"Antibes 06600
-                ";8640;NA;36556;https://www.leboncoin.fr/voitures/1303279002.htm?ca=21_s;Zoe;24600;8990;A prendre plus tard;intens
+                ";12227;NA;15000;https://www.leboncoin.fr/voitures/1159162168.htm?ca=12_s;Zoe;24600;14100;A prendre plus tard;0184030235;intens
+107;particulier;2017;"Belgentier 83210
+                ";13100;NA;12000;https://www.leboncoin.fr/voitures/1322113899.htm?ca=21_s;Zoe;24600;15500;A prendre plus tard;NA;intens
+108;particulier;2016;"Aubignan 84810
+                ";14531;NA;7609;https://www.leboncoin.fr/voitures/1320914417.htm?ca=21_s;Zoe;23900;14000;A prendre plus tard;NA;zen
+109;Pro Véhicules;2016;"Nice 06200
+                ";12862;NA;9000;https://www.leboncoin.fr/voitures/1321281277.htm?ca=21_s;Zoe;24600;12900;A prendre plus tard;0422171005;intens
+110;Pro Véhicules;2016;"Orange 84100
+                ";11681;NA;7456;https://www.leboncoin.fr/voitures/1320869772.htm?ca=21_s;Zoe;22600;10900;A prendre plus tard;0632681662;life
+111;Pro Véhicules;2013;"Manosque 04100
+                ";9541;NA;13976;https://www.leboncoin.fr/voitures/1314423304.htm?ca=21_s;Zoe;24600;8990;A prendre plus tard;0608548996;intens
+112;Pro Véhicules;2015;"Manosque 04100
+                ";9720;NA;18768;https://www.leboncoin.fr/voitures/1311159943.htm?ca=21_s;Zoe;22600;9990;A prendre plus tard;0608548996;life
+113;Pro Véhicules;2014;"Hyères 83400
+                ";8899;NA;31200;https://www.leboncoin.fr/voitures/1320604132.htm?ca=21_s;Zoe;24600;9990;A prendre plus tard;NA;intens
+114;Pro Véhicules;2016;"Marignane 13700
+                ";11662;NA;8184;https://www.leboncoin.fr/voitures/1167475798.htm?ca=21_s;Zoe;22600;11390;A prendre plus tard;0805805802;life
+115;Pro Véhicules;2014;"Aix-en-Provence 13100
+                ";11361;NA;30219;https://www.leboncoin.fr/voitures/1320784888.htm?ca=21_s;Zoe;22600;9490;A prendre plus tard;0805805802;life
+116;Pro Véhicules;2016;"Marignane 13700
+                ";12740;NA;11457;https://www.leboncoin.fr/voitures/1320814059.htm?ca=21_s;Zoe;24600;10690;A prendre plus tard;0463211124;intens
+117;Pro Véhicules;2013;"Roquebrune-sur-Argens 83520
+                ";8559;NA;41370;https://www.leboncoin.fr/voitures/1187360909.htm?ca=21_s;Zoe;24600;8290;A prendre plus tard;NA;intens
+118;Pro Véhicules;2014;"Grasse 06130
+                ";12135;NA;13906;https://www.leboncoin.fr/voitures/1320772955.htm?ca=21_s;Zoe;22600;9390;A prendre plus tard;0422170108;life
+119;Pro Véhicules;2015;"Salon-de-Provence 13300
+                ";10957;NA;41642;https://www.leboncoin.fr/voitures/1319149752.htm?ca=21_s;Zoe;24600;9990;A prendre plus tard;0490421313;intens
+120;Pro Véhicules;2015;"Antibes 06600
+                ";9906;NA;14351;https://www.leboncoin.fr/voitures/1319117065.htm?ca=21_s;Zoe;22600;10490;A prendre plus tard;0422170122;life
+121;Pro Véhicules;2013;"Aubagne 13400
+                ";8800;NA;36812;https://www.leboncoin.fr/voitures/1179528453.htm?ca=21_s;Zoe;24600;9990;A prendre plus tard;0422170191;intens
+122;Pro Véhicules;2014;"Salon-de-Provence 13300
+                ";9437;NA;47822;https://www.leboncoin.fr/voitures/1179546119.htm?ca=21_s;Zoe;23900;8990;A prendre plus tard;0490421313;zen
 123;Pro Véhicules;2014;"Antibes 06600
-                ";11723;NA;24890;https://www.leboncoin.fr/voitures/1303278931.htm?ca=21_s;Zoe;22600;8880;A prendre plus tard;life
+                ";8640;NA;36556;https://www.leboncoin.fr/voitures/1303279002.htm?ca=21_s;Zoe;24600;8990;A prendre plus tard;0422170122;intens
 124;Pro Véhicules;2014;"Antibes 06600
-                ";8883;NA;31456;https://www.leboncoin.fr/voitures/1303278889.htm?ca=21_s;Zoe;24600;9590;A prendre plus tard;intens
-125;Pro Véhicules;2015;"Marseille 13008
-                ";12165;NA;8109;https://www.leboncoin.fr/voitures/1179055416.htm?ca=21_s;Zoe;24600;11990;A prendre plus tard;intens
-126;Pro Véhicules;2015;"Marseille 13011
-                ";10593;NA;7868;https://www.leboncoin.fr/voitures/1179055349.htm?ca=21_s;Zoe;23900;11700;A prendre plus tard;zen
-127;Pro Véhicules;2015;"Mougins 06250
-                ";11930;NA;16468;https://www.leboncoin.fr/voitures/1163821025.htm?ca=21_s;Zoe;24600;10490;A prendre plus tard;intens
-128;Pro Véhicules;2015;"Fréjus 83600
-                ";12012;NA;14546;https://www.leboncoin.fr/voitures/1316814811.htm?ca=21_s;Zoe;24600;11700;A prendre plus tard;intens
-129;Pro Véhicules;2014;"Nice 06200
-                ";9575;bmgroupautos06@gmail.com;14000;https://www.leboncoin.fr/voitures/1188756843.htm?ca=21_s;Zoe;24600;9690;A prendre plus tard;intens
-130;Pro Véhicules;2015;"La Valette-du-Var 83160
-                ";10335;NA;17558;https://www.leboncoin.fr/voitures/1311183506.htm?ca=21_s;Zoe;23900;11700;A prendre plus tard;zen
-131;Pro Véhicules;2016;"Arles 13200
-                ";11620;NA;9446;https://www.leboncoin.fr/voitures/1304254184.htm?ca=21_s;Zoe;22600;9490;A prendre plus tard;life
-132;Pro Véhicules;2016;"Mougins 06250
-                ";12576;NA;13731;https://www.leboncoin.fr/voitures/1314911794.htm?ca=21_s;Zoe;24600;12790;A prendre plus tard;intens
-133;Pro Véhicules;2016;"Draguignan 83300
-                ";11723;85brendan.trousselard.draguignan@reseau.renault.fr;4500;https://www.leboncoin.fr/voitures/1114298790.htm?ca=21_s;Zoe;22600;12900;A prendre plus tard;life
-134;Pro Véhicules;2015;"Bouc-Bel-Air 13320
-                ";11119;NA;30000;https://www.leboncoin.fr/voitures/1182662516.htm?ca=21_s;Zoe;24600;10000;A prendre plus tard;intens
-135;Pro Véhicules;2015;"Fréjus 83600
-                ";10544;NA;11480;https://www.leboncoin.fr/voitures/1170613824.htm?ca=21_s;Zoe;23900;11700;A prendre plus tard;zen
-136;particulier;2016;"Briançon 05100
-                ";12869;NA;8800;https://www.leboncoin.fr/voitures/1313087345.htm?ca=21_s;Zoe;24600;10900;A prendre plus tard;intens
-137;Pro Véhicules;2014;"Fréjus 83600
-                ";10915;NA;37413;https://www.leboncoin.fr/voitures/1309316334.htm?ca=21_s;Zoe;22600;9800;A prendre plus tard;life
-138;Pro Véhicules;2014;"Vedène 84270
-                ";10479;NA;23286;https://www.leboncoin.fr/voitures/1139971351.htm?ca=21_s;Zoe;23900;9290;A prendre plus tard;zen
-139;Pro Véhicules;2013;"Valréas 84600
-                ";7718;NA;60990;https://www.leboncoin.fr/voitures/1308275895.htm?ca=21_s;Zoe;22600;8900;A prendre plus tard;life
-140;Pro Véhicules;2014;"Draguignan 83300
-                ";9049;85brendan.trousselard.draguignan@reseau.renault.fr;28600;https://www.leboncoin.fr/voitures/1166151086.htm?ca=21_s;Zoe;24600;9900;A prendre plus tard;intens
-141;Pro Véhicules;2014;"Marseille 13008
-                ";9621;NA;9222;https://www.leboncoin.fr/voitures/1183787738.htm?ca=21_s;Zoe;24600;11490;A prendre plus tard;intens
+                ";11723;NA;24890;https://www.leboncoin.fr/voitures/1303278931.htm?ca=21_s;Zoe;22600;8880;A prendre plus tard;0422170122;life
+125;Pro Véhicules;2014;"Antibes 06600
+                ";8883;NA;31456;https://www.leboncoin.fr/voitures/1303278889.htm?ca=21_s;Zoe;24600;9590;A prendre plus tard;0422170122;intens
+126;Pro Véhicules;2015;"Marseille 13008
+                ";12165;NA;8109;https://www.leboncoin.fr/voitures/1179055416.htm?ca=21_s;Zoe;24600;11990;A prendre plus tard;0422170199;intens
+127;Pro Véhicules;2015;"Marseille 13011
+                ";10593;NA;7868;https://www.leboncoin.fr/voitures/1179055349.htm?ca=21_s;Zoe;23900;11700;A prendre plus tard;0484320243;zen
+128;Pro Véhicules;2015;"Mougins 06250
+                ";11930;NA;16468;https://www.leboncoin.fr/voitures/1163821025.htm?ca=21_s;Zoe;24600;10490;A prendre plus tard;0422170107;intens
+129;Pro Véhicules;2015;"Fréjus 83600
+                ";12012;NA;14546;https://www.leboncoin.fr/voitures/1316814811.htm?ca=21_s;Zoe;24600;11700;A prendre plus tard;NA;intens
+130;Pro Véhicules;2014;"Nice 06200
+                ";9575;bmgroupautos06@gmail.com;14000;https://www.leboncoin.fr/voitures/1188756843.htm?ca=21_s;Zoe;24600;9690;A prendre plus tard;0489974537;intens
+131;Pro Véhicules;2015;"La Valette-du-Var 83160
+                ";10335;NA;17558;https://www.leboncoin.fr/voitures/1311183506.htm?ca=21_s;Zoe;23900;11700;A prendre plus tard;0422170181;zen
+132;Pro Véhicules;2016;"Arles 13200
+                ";11620;NA;9446;https://www.leboncoin.fr/voitures/1304254184.htm?ca=21_s;Zoe;22600;9490;A prendre plus tard;0490188023;life
+133;Pro Véhicules;2016;"Mougins 06250
+                ";12576;NA;13731;https://www.leboncoin.fr/voitures/1314911794.htm?ca=21_s;Zoe;24600;12790;A prendre plus tard;0422170107;intens
+134;Pro Véhicules;2016;"Draguignan 83300
+                ";11723;85brendan.trousselard.draguignan@reseau.renault.fr;4500;https://www.leboncoin.fr/voitures/1114298790.htm?ca=21_s;Zoe;22600;12900;A prendre plus tard;NA;life
+135;Pro Véhicules;2015;"Bouc-Bel-Air 13320
+                ";11119;NA;30000;https://www.leboncoin.fr/voitures/1182662516.htm?ca=21_s;Zoe;24600;10000;A prendre plus tard;NA;intens
+136;Pro Véhicules;2015;"Fréjus 83600
+                ";10544;NA;11480;https://www.leboncoin.fr/voitures/1170613824.htm?ca=21_s;Zoe;23900;11700;A prendre plus tard;NA;zen
+137;particulier;2016;"Briançon 05100
+                ";12869;NA;8800;https://www.leboncoin.fr/voitures/1313087345.htm?ca=21_s;Zoe;24600;10900;A prendre plus tard;NA;intens
+138;Pro Véhicules;2014;"Fréjus 83600
+                ";10915;NA;37413;https://www.leboncoin.fr/voitures/1309316334.htm?ca=21_s;Zoe;22600;9800;A prendre plus tard;NA;life
+139;Pro Véhicules;2014;"Vedène 84270
+                ";10479;NA;23286;https://www.leboncoin.fr/voitures/1139971351.htm?ca=21_s;Zoe;23900;9290;A prendre plus tard;0490319881;zen
+140;Pro Véhicules;2013;"Valréas 84600
+                ";7718;NA;60990;https://www.leboncoin.fr/voitures/1308275895.htm?ca=21_s;Zoe;22600;8900;A prendre plus tard;0664589849;life
+141;Pro Véhicules;2014;"Draguignan 83300
+                ";9049;85brendan.trousselard.draguignan@reseau.renault.fr;28600;https://www.leboncoin.fr/voitures/1166151086.htm?ca=21_s;Zoe;24600;9900;A prendre plus tard;NA;intens
 142;Pro Véhicules;2013;"Fontenay-le-Vicomte 91540
-                ";7674;NA;70896;https://www.leboncoin.fr/voitures/1314954351.htm?ca=12_s;Zoe;22600;6790;A prendre plus tard;life
+                ";7674;NA;70896;https://www.leboncoin.fr/voitures/1314954351.htm?ca=12_s;Zoe;22600;6790;A prendre plus tard;0164572000;life
 143;particulier;2010;"Fontenay-sous-Bois 94120
-                ";7254;NA;45000;https://www.leboncoin.fr/voitures/1314550590.htm?ca=12_s;Fluence;23900;9900;A prendre plus tard;NA
+                ";7254;NA;45000;https://www.leboncoin.fr/voitures/1314550590.htm?ca=12_s;Fluence;23900;9900;A prendre plus tard;0651193183;NA
 144;Pro Véhicules;2016;"Mantes-la-Ville 78711
-                ";11697;NA;6667;https://www.leboncoin.fr/voitures/1314085781.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;life
+                ";11697;NA;6667;https://www.leboncoin.fr/voitures/1314085781.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;0185500387;life
 145;Pro Véhicules;2017;"Paris 75015
-                ";15703;NA;500;https://www.leboncoin.fr/voitures/1153901361.htm?ca=12_s;Zoe;23900;16390;A prendre plus tard;zen
+                ";15703;NA;500;https://www.leboncoin.fr/voitures/1153901361.htm?ca=12_s;Zoe;23900;16390;A prendre plus tard;0184030570;zen
 146;particulier;2013;"Aulnay-sur-Mauldre 78126
-                ";8456;NA;55300;https://www.leboncoin.fr/voitures/1313301922.htm?ca=12_s;Zoe;23900;8000;A prendre plus tard;zen
+                ";8456;NA;55300;https://www.leboncoin.fr/voitures/1313301922.htm?ca=12_s;Zoe;23900;8000;A prendre plus tard;NA;zen
 147;Pro Véhicules;2015;"Melun 77000
-                ";9766;NA;17940;https://www.leboncoin.fr/voitures/1153494165.htm?ca=12_s;Zoe;22600;9900;A prendre plus tard;life
+                ";9766;NA;17940;https://www.leboncoin.fr/voitures/1153494165.htm?ca=12_s;Zoe;22600;9900;A prendre plus tard;0164393333;life
 148;Pro Véhicules;2015;"Paris 75008
-                ";10624;NA;3100;https://www.leboncoin.fr/voitures/1174505037.htm?ca=12_s;Zoe;23900;11590;A prendre plus tard;zen
+                ";10624;NA;3100;https://www.leboncoin.fr/voitures/1174505037.htm?ca=12_s;Zoe;23900;11590;A prendre plus tard;0178455073;zen
 149;Pro Véhicules;2015;"Paris 75008
-                ";10963;NA;40095;https://www.leboncoin.fr/voitures/1174505458.htm?ca=12_s;Zoe;24600;10700;A prendre plus tard;intens
+                ";10963;NA;40095;https://www.leboncoin.fr/voitures/1174505458.htm?ca=12_s;Zoe;24600;10700;A prendre plus tard;0178455073;intens
 150;Pro Véhicules;2013;"Paris 75008
-                ";8323;NA;81404;https://www.leboncoin.fr/voitures/1174505342.htm?ca=12_s;Zoe;23900;8700;A prendre plus tard;zen
+                ";8323;NA;81404;https://www.leboncoin.fr/voitures/1174505342.htm?ca=12_s;Zoe;23900;8700;A prendre plus tard;0178455073;zen
 151;particulier;2015;"Pussay 91740
-                ";10534;NA;11900;https://www.leboncoin.fr/voitures/1312154281.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;NA
+                ";10534;NA;11900;https://www.leboncoin.fr/voitures/1312154281.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;NA;NA
 152;Pro Véhicules;2014;"Paris 75008
-                ";9475;NA;18815;https://www.leboncoin.fr/voitures/1311654426.htm?ca=12_s;Zoe;24600;10900;A prendre plus tard;intens
+                ";9475;NA;18815;https://www.leboncoin.fr/voitures/1311654426.htm?ca=12_s;Zoe;24600;10900;A prendre plus tard;0178455073;intens
 153;Pro Véhicules;2015;"Courbevoie 92400
-                ";12139;NA;10014;https://www.leboncoin.fr/voitures/1311655583.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;intens
+                ";12139;NA;10014;https://www.leboncoin.fr/voitures/1311655583.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;0174704406;intens
 154;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654762.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654762.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 155;Pro Véhicules;2014;"Paris 75008
-                ";10832;NA;8184;https://www.leboncoin.fr/voitures/1311654168.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;zen
+                ";10832;NA;8184;https://www.leboncoin.fr/voitures/1311654168.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;0178455073;zen
 156;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654674.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654674.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 157;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654806.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654806.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;0160625056;intens
 158;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654839.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654839.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 159;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654664.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654664.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 160;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654684.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654684.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 161;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654659.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654659.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;0160625056;intens
 162;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654697.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654697.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 163;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654725.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654725.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 164;Pro Véhicules;2013;"Courbevoie 92400
-                ";9888;NA;19186;https://www.leboncoin.fr/voitures/1311655973.htm?ca=12_s;Zoe;23900;8790;A prendre plus tard;zen
+                ";9888;NA;19186;https://www.leboncoin.fr/voitures/1311655973.htm?ca=12_s;Zoe;23900;8790;A prendre plus tard;0174704406;zen
 165;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654795.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654795.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 166;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654735.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654735.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 167;Pro Véhicules;2017;"Brie-Comte-Robert 77170
-                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654831.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;intens
+                ";13521;NA;1;https://www.leboncoin.fr/voitures/1311654831.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
 168;Pro Véhicules;2015;"Pantin 93500
-                ";11731;NA;19756;https://www.leboncoin.fr/voitures/1311182741.htm?ca=12_s;Zoe;24600;11990;A prendre plus tard;intens
+                ";11731;NA;19756;https://www.leboncoin.fr/voitures/1311182741.htm?ca=12_s;Zoe;24600;11990;A prendre plus tard;0174730257;intens
 169;Pro Véhicules;2016;"Versailles 78000
-                ";14620;NA;100;https://www.leboncoin.fr/voitures/1128769092.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;zen
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1128769092.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;0184270396;zen
 170;particulier;2015;"Orsay 91400
-                ";11715;NA;20000;https://www.leboncoin.fr/voitures/1309416440.htm?ca=12_s;Zoe;24600;10450;A prendre plus tard;intens
+                ";11715;NA;20000;https://www.leboncoin.fr/voitures/1309416440.htm?ca=12_s;Zoe;24600;10450;A prendre plus tard;NA;intens
 171;Pro Véhicules;2013;"Nanterre 92000
-                ";8597;NA;49299;https://www.leboncoin.fr/voitures/1310686854.htm?ca=12_s;Zoe;23900;9980;A prendre plus tard;zen
+                ";8597;NA;49299;https://www.leboncoin.fr/voitures/1310686854.htm?ca=12_s;Zoe;23900;9980;A prendre plus tard;0184207324;zen
 172;Pro Véhicules;2014;"Courbevoie 92400
-                ";10197;NA;2759;https://www.leboncoin.fr/voitures/1128769008.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;life
+                ";12237;NA;2759;https://www.leboncoin.fr/voitures/1128769008.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0174704406;life
 173;Pro Véhicules;2016;"Montreuil 93100
-                ";12560;NA;6130;https://www.leboncoin.fr/voitures/1049170770.htm?ca=12_s;Zoe;24600;12990;A prendre plus tard;intens
+                ";12938;NA;6130;https://www.leboncoin.fr/voitures/1049170770.htm?ca=12_s;Zoe;24600;12990;A prendre plus tard;0170176498;intens
 174;Pro Véhicules;2016;"Versailles 78000
-                ";12388;NA;100;https://www.leboncoin.fr/voitures/1128769061.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;zen
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1128769061.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;0184270396;zen
 175;particulier;2017;"Arpajon 91290
-                ";13143;NA;7400;https://www.leboncoin.fr/voitures/1310153601.htm?ca=12_s;Zoe;23900;16800;A prendre plus tard;zen
+                ";15370;NA;7400;https://www.leboncoin.fr/voitures/1310153601.htm?ca=12_s;Zoe;23900;16800;A prendre plus tard;NA;zen
 176;Pro Véhicules;2014;"Nanterre 92000
-                ";9257;NA;33853;https://www.leboncoin.fr/voitures/1309668385.htm?ca=12_s;Zoe;22600;9980;A prendre plus tard;life
+                ";11117;NA;33853;https://www.leboncoin.fr/voitures/1309668385.htm?ca=12_s;Zoe;22600;9980;A prendre plus tard;0184207324;life
+177;Pro Véhicules;2016;"Paris 75015
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1170361076.htm?ca=12_s;Zoe;23900;10390;A prendre plus tard;0184030570;zen
+178;Pro Véhicules;2016;"Paris 75015
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1170361118.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
+179;Pro Véhicules;2016;"Paris 75015
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1170361094.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;0184030570;zen
+180;Pro Véhicules;2014;"Versailles 78000
+                ";11536;NA;27582;https://www.leboncoin.fr/voitures/1136394587.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0175448151;life
+181;Pro Véhicules;2014;"Courbevoie 92400
+                ";9540;NA;15888;https://www.leboncoin.fr/voitures/1148864542.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;0174704406;intens
+182;particulier;2017;"Périgny 94520
+                ";15212;NA;17800;https://www.leboncoin.fr/voitures/1306769563.htm?ca=12_s;Zoe;23900;15000;A prendre plus tard;NA;NA
+183;Pro Véhicules;2015;"Paris 75012
+                ";9689;NA;19438;https://www.leboncoin.fr/voitures/1147612495.htm?ca=12_s;Zoe;22600;9500;A prendre plus tard;0182714652;life
+184;Pro Véhicules;2013;"Courbevoie 92400
+                ";9200;NA;8800;https://www.leboncoin.fr/voitures/1101078242.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0174704406;life
+185;Pro Véhicules;2016;"Paris 75015
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1167828367.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
+186;Pro Véhicules;2014;"Les Ulis 91940
+                ";11245;NA;31872;https://www.leboncoin.fr/voitures/1171143468.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0160926972;life
+187;Pro Véhicules;2013;"Versailles 78000
+                ";8339;NA;70102;https://www.leboncoin.fr/voitures/1303806454.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;0175448151;zen
+188;Pro Véhicules;2014;"Montreuil 93100
+                ";11271;NA;31425;https://www.leboncoin.fr/voitures/1178596024.htm?ca=12_s;Zoe;22600;9100;A prendre plus tard;0170176498;life
+189;Pro Véhicules;2014;"Versailles 78000
+                ";11206;NA;32203;https://www.leboncoin.fr/voitures/1303298657.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0175448151;life
+190;Pro Véhicules;2014;"Le Perreux-sur-Marne 94170
+                ";10758;NA;14497;https://www.leboncoin.fr/voitures/1166590040.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;0143246174;NA
+191;Pro Véhicules;2014;"Versailles 78000
+                ";10604;NA;20359;https://www.leboncoin.fr/voitures/1303298374.htm?ca=12_s;Zoe;23900;10400;A prendre plus tard;0175448151;zen
+192;Pro Véhicules;2016;"Chilly-Mazarin 91380
+                ";14563;NA;5975;https://www.leboncoin.fr/voitures/1166018156.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;0175448166;zen
+193;Pro Véhicules;2016;"Fresnes 94260
+                ";14563;NA;5975;https://www.leboncoin.fr/voitures/1166018166.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;0175448164;zen
+194;Pro Véhicules;2014;"Fresnes 94260
+                ";12152;NA;12658;https://www.leboncoin.fr/voitures/1187231493.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0175448164;life
+195;Pro Véhicules;2014;"Chilly-Mazarin 91380
+                ";12152;NA;12658;https://www.leboncoin.fr/voitures/1187231658.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0175448166;life
+196;Pro Véhicules;2016;"Paris 75008
+                ";12818;NA;10000;https://www.leboncoin.fr/voitures/1120100372.htm?ca=12_s;Zoe;24600;14000;A prendre plus tard;0184030235;intens
+197;Pro Véhicules;2015;"Paris 75008
+                ";11946;NA;16134;https://www.leboncoin.fr/voitures/1164288784.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;0178455073;intens
+198;Pro Véhicules;2014;"Chelles 77500
+                ";9727;NA;36385;https://www.leboncoin.fr/voitures/1164238082.htm?ca=12_s;Zoe;23900;10100;A prendre plus tard;0677372750;zen
+199;Pro Véhicules;2016;"Paris 75015
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1186775046.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;0184030570;zen
+200;Pro Véhicules;2014;"Paris 75012
+                ";11906;NA;21264;https://www.leboncoin.fr/voitures/1154896368.htm?ca=12_s;Zoe;22600;8980;A prendre plus tard;0182714652;life
+201;Pro Véhicules;2014;"Boulogne-Billancourt 92100
+                ";11900;NA;21430;https://www.leboncoin.fr/voitures/1186340864.htm?ca=12_s;Zoe;22600;8690;A prendre plus tard;0174037256;life
+202;Pro Véhicules;2015;"Boulogne-Billancourt 92100
+                ";10249;NA;19157;https://www.leboncoin.fr/voitures/1186340768.htm?ca=12_s;Zoe;23900;10390;A prendre plus tard;0174037256;zen
+203;Pro Véhicules;2014;"Chelles 77500
+                ";11473;NA;28664;https://www.leboncoin.fr/voitures/1163364537.htm?ca=12_s;Zoe;22600;10600;A prendre plus tard;0677372750;life
+204;particulier;2015;"Paris 75116
+                ";12184;NA;6000;https://www.leboncoin.fr/voitures/1184849743.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;NA;intens
+205;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";15704;NA;1;https://www.leboncoin.fr/voitures/1183788805.htm?ca=12_s;Zoe;23900;16480;A prendre plus tard;0160625056;zen
+206;Pro Véhicules;2014;"Pantin 93500
+                ";9319;NA;23276;https://www.leboncoin.fr/voitures/1183337869.htm?ca=12_s;Zoe;24600;10590;A prendre plus tard;0174730257;intens
+207;particulier;2015;"Saint-Soupplets 77165
+                ";9533;NA;65000;https://www.leboncoin.fr/voitures/1183091992.htm?ca=12_s;Zoe;23900;10500;A prendre plus tard;NA;NA
+208;Pro Véhicules;2014;"Noisiel 77186
+                ";10130;NA;29306;https://www.leboncoin.fr/voitures/1182420995.htm?ca=12_s;Zoe;23900;10900;A prendre plus tard;0160059293;zen
+209;Pro Véhicules;2016;"Pantin 93500
+                ";14556;NA;6400;https://www.leboncoin.fr/voitures/1182361545.htm?ca=12_s;Zoe;23900;12999;A prendre plus tard;0183799581;zen
+210;Pro Véhicules;2016;"Paris 75015
+                ";14620;NA;100;https://www.leboncoin.fr/voitures/1138649404.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
+211;Pro Véhicules;2014;"Persan 95340
+                ";10610;NA;20205;https://www.leboncoin.fr/voitures/1180933261.htm?ca=12_s;Zoe;23900;10490;A prendre plus tard;0171025422;zen
+212;Pro Véhicules;2016;"Chelles 77500
+                ";11741;NA;1410;https://www.leboncoin.fr/voitures/1089980725.htm?ca=12_s;Zoe;22600;13990;A prendre plus tard;0677372750;life
+213;Pro Véhicules;2016;"Paris 75008
+                ";12477;NA;15000;https://www.leboncoin.fr/voitures/1159162168.htm?ca=12_s;Zoe;24600;14100;A prendre plus tard;0184030235;intens
+214;Pro Véhicules;2014;"Marseille 13008
+                ";9621;NA;9222;https://www.leboncoin.fr/voitures/1183787738.htm?ca=21_s;Zoe;24600;11490;A prendre plus tard;0422170199;intens
+215;Pro Véhicules;2014;"Arles 13200
+                ";11680;NA;25333;https://www.leboncoin.fr/voitures/1307026601.htm?ca=21_s;Zoe;22600;9490;A prendre plus tard;0490188023;life
+216;Pro Véhicules;2016;"Vitrolles 13127
+                ";11669;NA;7911;https://www.leboncoin.fr/voitures/1306026512.htm?ca=21_s;Zoe;22600;10990;A prendre plus tard;0805805802;life
+217;Pro Véhicules;2015;"Carpentras 84200
+                ";10057;NA;820;https://www.leboncoin.fr/voitures/1167913928.htm?ca=21_s;Zoe;22600;10700;A prendre plus tard;0675324710;life
+218;Pro Véhicules;2015;"Cannes 06400
+                ";11946;NA;16133;https://www.leboncoin.fr/voitures/1303278974.htm?ca=21_s;Zoe;24600;11590;A prendre plus tard;0481072130;intens
+219;Pro Véhicules;2014;"Cannes 06400
+                ";10265;NA;27158;https://www.leboncoin.fr/voitures/1303279043.htm?ca=21_s;Zoe;23900;9390;A prendre plus tard;0481072130;zen
+220;Pro Véhicules;2014;"La Seyne-sur-Mer 83500
+                ";9404;NA;51657;https://www.leboncoin.fr/voitures/1165215533.htm?ca=21_s;Zoe;23900;8900;A prendre plus tard;0494110548;zen
+221;Pro Véhicules;2016;"Vitrolles 13127
+                ";11669;NA;7911;https://www.leboncoin.fr/voitures/1186627191.htm?ca=21_s;Zoe;22600;10990;A prendre plus tard;0805805802;life
+222;Pro Véhicules;2013;"Aubagne 13400
+                ";8926;NA;41535;https://www.leboncoin.fr/voitures/1179055312.htm?ca=21_s;Zoe;23900;7500;A prendre plus tard;0422170191;zen
+223;Pro Véhicules;2016;"Vitrolles 13127
+                ";11712;NA;5500;https://www.leboncoin.fr/voitures/1183135194.htm?ca=21_s;Zoe;22600;11999;A prendre plus tard;06214945610;life
+224;particulier;2013;"Ventabren 13122
+                ";7978;NA;76000;https://www.leboncoin.fr/voitures/1183108008.htm?ca=21_s;Zoe;24600;7500;A prendre plus tard;NA;intens
+225;Pro Véhicules;2013;"Salon-de-Provence 13300
+                ";8427;NA;57314;https://www.leboncoin.fr/voitures/1182375223.htm?ca=21_s;Zoe;23900;7900;A prendre plus tard;0490421313;zen
+226;particulier;2016;"La Teste-de-Buch 33260
+                ";14156;NA;15000;https://www.leboncoin.fr/voitures/1322038429.htm?ca=2_s;Zoe;23900;10000;A prendre plus tard;NA;NA
+227;Pro Véhicules;2016;"Dax 40100
+                ";11695;NA;9746;https://www.leboncoin.fr/voitures/1321806610.htm?ca=2_s;Zoe;22600;11490;A prendre plus tard;0558909010;life
+228;particulier;2016;"Saint-Lon-les-Mines 40300
+                ";11087;NA;21200;https://www.leboncoin.fr/voitures/1321378824.htm?ca=2_s;Zoe;22600;9200;A prendre plus tard;NA;life
+229;Pro Véhicules;2014;"Bias 47300
+                ";10957;NA;38049;https://www.leboncoin.fr/voitures/1310926298.htm?ca=2_s;Zoe;22600;8990;A prendre plus tard;NA;life
+230;particulier;2014;"Gujan-Mestras 33470
+                ";10718;NA;46800;https://www.leboncoin.fr/voitures/1320208443.htm?ca=2_s;Zoe;22600;7800;A prendre plus tard;NA;life
+231;Pro Véhicules;2014;"Lormont 33310
+                ";10647;NA;65387;https://www.leboncoin.fr/voitures/1319650908.htm?ca=2_s;Zoe;22600;7490;A prendre plus tard;0531081576;life
+232;Pro Véhicules;2015;"Bruges 33520
+                ";9859;NA;17500;https://www.leboncoin.fr/voitures/1136832633.htm?ca=2_s;Zoe;22600;9450;A prendre plus tard;0531081574;life
+233;Pro Véhicules;2014;"Larressore 64480
+                ";10315;sarl.garage.etchegaray@orange.frXavier;27545;https://www.leboncoin.fr/voitures/1319313458.htm?ca=2_s;Zoe;23900;9990;A prendre plus tard;NA;zen
+234;particulier;2016;"Bordeaux 33100
+                ";11635;NA;11000;https://www.leboncoin.fr/voitures/1319270536.htm?ca=2_s;Zoe;22600;9300;A prendre plus tard;NA;life
+235;Pro Véhicules;2015;"Bruges 33520
+                ";9871;NA;17076;https://www.leboncoin.fr/voitures/1319136873.htm?ca=2_s;Zoe;22600;9950;A prendre plus tard;0531081574;life
+236;Pro Véhicules;2015;"Villenave-d'Ornon 33140
+                ";10068;NA;10295;https://www.leboncoin.fr/voitures/1158341806.htm?ca=2_s;Zoe;22600;9600;A prendre plus tard;0531081640;life
+237;Pro Véhicules;2015;"Libourne 33500
+                ";12221;NA;10132;https://www.leboncoin.fr/voitures/1318651695.htm?ca=2_s;Zoe;24600;12000;A prendre plus tard;0649173452;intens
+238;Pro Véhicules;2014;"Bergerac 24100
+                ";9823;NA;35858;https://www.leboncoin.fr/voitures/1155661889.htm?ca=2_s;Zoe;23900;10100;A prendre plus tard;0564283208;zen
+239;Pro Véhicules;2014;"Lormont 33310
+                ";10723;NA;46385;https://www.leboncoin.fr/voitures/1318170597.htm?ca=2_s;Zoe;22600;8990;A prendre plus tard;0531081576;life
+240;particulier;2014;"Commensacq 40210
+                ";10705;NA;48000;https://www.leboncoin.fr/voitures/1317638828.htm?ca=2_s;Zoe;22600;9500;A prendre plus tard;NA;life
+241;Pro Véhicules;2014;"Bruges 33520
+                ";10811;NA;42351;https://www.leboncoin.fr/voitures/1149708823.htm?ca=2_s;Zoe;22600;7950;A prendre plus tard;0531081574;life
+242;Pro Véhicules;2013;"Bergerac 24100
+                ";9181;NA;38077;https://www.leboncoin.fr/voitures/1317104890.htm?ca=2_s;Zoe;23900;9500;A prendre plus tard;0564283208;zen
+243;particulier;2013;"Pessac 33600
+                ";8670;NA;49000;https://www.leboncoin.fr/voitures/1315861486.htm?ca=2_s;Zoe;23900;8000;A prendre plus tard;NA;zen
+244;Pro Véhicules;2016;"Marmande 47200
+                ";11335;NA;20300;https://www.leboncoin.fr/voitures/1314787398.htm?ca=2_s;Zoe;22600;10995;A prendre plus tard;0553881330;life
+245;Pro Véhicules;2015;"Mérignac 33700
+                ";10681;NA;6600;https://www.leboncoin.fr/voitures/1314477373.htm?ca=2_s;Zoe;23900;10990;A prendre plus tard;0556132965;zen
+246;Pro Véhicules;2014;"Villenave-d'Ornon 33140
+                ";9726;NA;38087;https://www.leboncoin.fr/voitures/1175328625.htm?ca=2_s;Zoe;23900;8600;A prendre plus tard;0531081640;zen
+247;Pro Véhicules;2014;"Hasparren 64240
+                ";10664;Trancoso0675008314marchands@baskoto.comNouveau;55000;https://www.leboncoin.fr/voitures/1311303721.htm?ca=2_s;Zoe;22600;9490;A prendre plus tard;0675008314;life
+248;Pro Véhicules;2015;"Pessac 33600
+                ";9087;NA;48957;https://www.leboncoin.fr/voitures/1182357463.htm?ca=2_s;Zoe;22600;9290;A prendre plus tard;0531081450;life
+249;Pro Véhicules;2016;"Bruges 33520
+                ";11819;NA;3000;https://www.leboncoin.fr/voitures/1079144403.htm?ca=2_s;Zoe;22600;13300;A prendre plus tard;0516066011;life
+250;Pro Véhicules;2013;"Villenave-d'Ornon 33140
+                ";9292;NA;470;https://www.leboncoin.fr/voitures/1109418192.htm?ca=2_s;Zoe;22600;9200;A prendre plus tard;0531081640;life
+251;Pro Véhicules;2016;"Lormont 33310
+                ";11809;NA;4619;https://www.leboncoin.fr/voitures/1307057599.htm?ca=2_s;Zoe;22600;11990;A prendre plus tard;0531081576;life
+252;Pro Véhicules;2014;"Lormont 33310
+                ";10826;NA;15143;https://www.leboncoin.fr/voitures/1307058054.htm?ca=2_s;Zoe;23900;8990;A prendre plus tard;0531081576;zen
+253;Pro Véhicules;2014;"Lormont 33310
+                ";11855;NA;24088;https://www.leboncoin.fr/voitures/1307057894.htm?ca=2_s;Zoe;22600;8690;A prendre plus tard;0531081576;life
+254;Pro Véhicules;2014;"Lormont 33310
+                ";11162;NA;34301;https://www.leboncoin.fr/voitures/1307057802.htm?ca=2_s;Zoe;22600;8490;A prendre plus tard;0531081576;life
+255;Pro Véhicules;2014;"Lormont 33310
+                ";12268;NA;10690;https://www.leboncoin.fr/voitures/1307058176.htm?ca=2_s;Zoe;22600;8990;A prendre plus tard;0531081576;life
+256;Pro Véhicules;2014;"Lormont 33310
+                ";8673;NA;37441;https://www.leboncoin.fr/voitures/1307057547.htm?ca=2_s;Zoe;24600;9490;A prendre plus tard;0531081576;intens
+257;Pro Véhicules;2016;"Lormont 33310
+                ";11760;NA;7701;https://www.leboncoin.fr/voitures/1307058227.htm?ca=2_s;Zoe;22600;10500;A prendre plus tard;0531081576;life
+258;Pro Véhicules;2015;"Bruges 33520
+                ";12017;NA;16370;https://www.leboncoin.fr/voitures/1307057860.htm?ca=2_s;Zoe;24600;9950;A prendre plus tard;0531081574;intens
+259;Pro Véhicules;2014;"Lormont 33310
+                ";10905;NA;9094;https://www.leboncoin.fr/voitures/1307058016.htm?ca=2_s;Zoe;23900;8990;A prendre plus tard;0531081576;zen
+260;particulier;2017;" 40390
+                ";15395;NA;9000;https://www.leboncoin.fr/voitures/1164190494.htm?ca=2_s;Zoe;23900;15000;A prendre plus tard;NA;NA
+261;Pro Véhicules;2013;"Fontenay-le-Vicomte 91540
+                ";7729;NA;70896;https://www.leboncoin.fr/voitures/1314954351.htm?ca=12_s;Zoe;22600;6790;A prendre plus tard;0164572000;life
+262;particulier;2010;"Fontenay-sous-Bois 94120
+                ";7307;NA;45000;https://www.leboncoin.fr/voitures/1314550590.htm?ca=12_s;Fluence;23900;9900;A prendre plus tard;0651193183;NA
+263;Pro Véhicules;2016;"Mantes-la-Ville 78711
+                ";11782;NA;6667;https://www.leboncoin.fr/voitures/1314085781.htm?ca=12_s;Zoe;22600;10890;A prendre plus tard;0185500387;life
+264;Pro Véhicules;2017;"Paris 75015
+                ";15818;NA;500;https://www.leboncoin.fr/voitures/1153901361.htm?ca=12_s;Zoe;23900;16390;A prendre plus tard;0184030570;zen
+265;particulier;2013;"Aulnay-sur-Mauldre 78126
+                ";8519;NA;55300;https://www.leboncoin.fr/voitures/1313301922.htm?ca=12_s;Zoe;23900;8000;A prendre plus tard;NA;zen
+266;Pro Véhicules;2015;"Melun 77000
+                ";9835;NA;17940;https://www.leboncoin.fr/voitures/1153494165.htm?ca=12_s;Zoe;22600;9900;A prendre plus tard;0164393333;life
+267;Pro Véhicules;2015;"Paris 75008
+                ";10700;NA;3100;https://www.leboncoin.fr/voitures/1174505037.htm?ca=12_s;Zoe;23900;11590;A prendre plus tard;0178455073;zen
+268;Pro Véhicules;2015;"Paris 75008
+                ";11044;NA;40095;https://www.leboncoin.fr/voitures/1174505458.htm?ca=12_s;Zoe;24600;10700;A prendre plus tard;0178455073;intens
+269;Pro Véhicules;2013;"Paris 75008
+                ";8382;NA;81404;https://www.leboncoin.fr/voitures/1174505342.htm?ca=12_s;Zoe;23900;8700;A prendre plus tard;0178455073;zen
+270;particulier;2015;"Pussay 91740
+                ";10610;NA;11900;https://www.leboncoin.fr/voitures/1312154281.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;NA;NA
+271;Pro Véhicules;2014;"Paris 75008
+                ";9542;NA;18815;https://www.leboncoin.fr/voitures/1311654426.htm?ca=12_s;Zoe;24600;10900;A prendre plus tard;0178455073;intens
+272;Pro Véhicules;2015;"Courbevoie 92400
+                ";12223;NA;10014;https://www.leboncoin.fr/voitures/1311655583.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;0174704406;intens
+273;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654762.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+274;Pro Véhicules;2014;"Paris 75008
+                ";10911;NA;8184;https://www.leboncoin.fr/voitures/1311654168.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;0178455073;zen
+275;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654674.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+276;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654806.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;0160625056;intens
+277;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654839.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+278;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654664.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+279;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654684.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+280;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654659.htm?ca=12_s;Zoe;24600;17490;A prendre plus tard;0160625056;intens
+281;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654697.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+282;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654725.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+283;Pro Véhicules;2013;"Courbevoie 92400
+                ";9961;NA;19186;https://www.leboncoin.fr/voitures/1311655973.htm?ca=12_s;Zoe;23900;8790;A prendre plus tard;0174704406;zen
+284;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654795.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+285;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654735.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+286;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";13620;NA;1;https://www.leboncoin.fr/voitures/1311654831.htm?ca=12_s;Zoe;24600;17790;A prendre plus tard;0160625056;intens
+287;Pro Véhicules;2015;"Pantin 93500
+                ";11818;NA;19756;https://www.leboncoin.fr/voitures/1311182741.htm?ca=12_s;Zoe;24600;11990;A prendre plus tard;0174730257;intens
+288;Pro Véhicules;2016;"Versailles 78000
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1128769092.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;0184270396;zen
+289;particulier;2015;"Orsay 91400
+                ";11797;NA;20000;https://www.leboncoin.fr/voitures/1309416440.htm?ca=12_s;Zoe;24600;10450;A prendre plus tard;NA;intens
+290;Pro Véhicules;2013;"Nanterre 92000
+                ";8661;NA;49299;https://www.leboncoin.fr/voitures/1310686854.htm?ca=12_s;Zoe;23900;9980;A prendre plus tard;0184207324;zen
+291;Pro Véhicules;2014;"Courbevoie 92400
+                ";12331;NA;2759;https://www.leboncoin.fr/voitures/1128769008.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0174704406;life
+292;Pro Véhicules;2016;"Montreuil 93100
+                ";13032;NA;6130;https://www.leboncoin.fr/voitures/1049170770.htm?ca=12_s;Zoe;24600;12990;A prendre plus tard;0170176498;intens
+293;Pro Véhicules;2016;"Versailles 78000
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1128769061.htm?ca=12_s;Zoe;23900;13900;A prendre plus tard;0184270396;zen
+294;particulier;2017;"Arpajon 91290
+                ";15483;NA;7400;https://www.leboncoin.fr/voitures/1310153601.htm?ca=12_s;Zoe;23900;16800;A prendre plus tard;NA;zen
+295;Pro Véhicules;2014;"Nanterre 92000
+                ";11185;NA;33853;https://www.leboncoin.fr/voitures/1309668385.htm?ca=12_s;Zoe;22600;9980;A prendre plus tard;0184207324;life
+296;Pro Véhicules;2016;"Paris 75015
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1170361076.htm?ca=12_s;Zoe;23900;10390;A prendre plus tard;0184030570;zen
+297;Pro Véhicules;2016;"Paris 75015
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1170361118.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
+298;Pro Véhicules;2016;"Paris 75015
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1170361094.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;0184030570;zen
+299;Pro Véhicules;2014;"Versailles 78000
+                ";11626;NA;27582;https://www.leboncoin.fr/voitures/1136394587.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0175448151;life
+300;Pro Véhicules;2014;"Courbevoie 92400
+                ";9608;NA;15888;https://www.leboncoin.fr/voitures/1148864542.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;0174704406;intens
+301;particulier;2017;"Périgny 94520
+                ";15324;NA;17800;https://www.leboncoin.fr/voitures/1306769563.htm?ca=12_s;Zoe;23900;15000;A prendre plus tard;NA;NA
+302;Pro Véhicules;2015;"Paris 75012
+                ";9758;NA;19438;https://www.leboncoin.fr/voitures/1147612495.htm?ca=12_s;Zoe;22600;9500;A prendre plus tard;0182714652;life
+303;Pro Véhicules;2013;"Courbevoie 92400
+                ";9267;NA;8800;https://www.leboncoin.fr/voitures/1101078242.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0174704406;life
+304;Pro Véhicules;2016;"Paris 75015
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1167828367.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
+305;Pro Véhicules;2014;"Les Ulis 91940
+                ";11313;NA;31872;https://www.leboncoin.fr/voitures/1171143468.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0160926972;life
+306;Pro Véhicules;2013;"Versailles 78000
+                ";8401;NA;70102;https://www.leboncoin.fr/voitures/1303806454.htm?ca=12_s;Zoe;23900;9000;A prendre plus tard;0175448151;zen
+307;Pro Véhicules;2014;"Montreuil 93100
+                ";11359;NA;31425;https://www.leboncoin.fr/voitures/1178596024.htm?ca=12_s;Zoe;22600;9100;A prendre plus tard;0170176498;life
+308;Pro Véhicules;2014;"Versailles 78000
+                ";11295;NA;32203;https://www.leboncoin.fr/voitures/1303298657.htm?ca=12_s;Zoe;22600;9600;A prendre plus tard;0175448151;life
+309;Pro Véhicules;2014;"Le Perreux-sur-Marne 94170
+                ";10838;NA;14497;https://www.leboncoin.fr/voitures/1166590040.htm?ca=12_s;Zoe;23900;10990;A prendre plus tard;0143246174;NA
+310;Pro Véhicules;2014;"Versailles 78000
+                ";10682;NA;20359;https://www.leboncoin.fr/voitures/1303298374.htm?ca=12_s;Zoe;23900;10400;A prendre plus tard;0175448151;zen
+311;Pro Véhicules;2016;"Chilly-Mazarin 91380
+                ";14671;NA;5975;https://www.leboncoin.fr/voitures/1166018156.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;0175448166;zen
+312;Pro Véhicules;2016;"Fresnes 94260
+                ";14671;NA;5975;https://www.leboncoin.fr/voitures/1166018166.htm?ca=12_s;Zoe;23900;11990;A prendre plus tard;0175448164;zen
+313;Pro Véhicules;2014;"Fresnes 94260
+                ";12246;NA;12658;https://www.leboncoin.fr/voitures/1187231493.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0175448164;life
+314;Pro Véhicules;2014;"Chilly-Mazarin 91380
+                ";12246;NA;12658;https://www.leboncoin.fr/voitures/1187231658.htm?ca=12_s;Zoe;22600;9490;A prendre plus tard;0175448166;life
+315;Pro Véhicules;2016;"Paris 75008
+                ";12912;NA;10000;https://www.leboncoin.fr/voitures/1120100372.htm?ca=12_s;Zoe;24600;14000;A prendre plus tard;0184030235;intens
+316;Pro Véhicules;2015;"Paris 75008
+                ";12034;NA;16134;https://www.leboncoin.fr/voitures/1164288784.htm?ca=12_s;Zoe;24600;11500;A prendre plus tard;0178455073;intens
+317;Pro Véhicules;2014;"Chelles 77500
+                ";9799;NA;36385;https://www.leboncoin.fr/voitures/1164238082.htm?ca=12_s;Zoe;23900;10100;A prendre plus tard;0677372750;zen
+318;Pro Véhicules;2016;"Paris 75015
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1186775046.htm?ca=12_s;Zoe;23900;11390;A prendre plus tard;0184030570;zen
+319;Pro Véhicules;2014;"Paris 75012
+                ";11999;NA;21264;https://www.leboncoin.fr/voitures/1154896368.htm?ca=12_s;Zoe;22600;8980;A prendre plus tard;0182714652;life
+320;Pro Véhicules;2014;"Boulogne-Billancourt 92100
+                ";11992;NA;21430;https://www.leboncoin.fr/voitures/1186340864.htm?ca=12_s;Zoe;22600;8690;A prendre plus tard;0174037256;life
+321;Pro Véhicules;2015;"Boulogne-Billancourt 92100
+                ";10323;NA;19157;https://www.leboncoin.fr/voitures/1186340768.htm?ca=12_s;Zoe;23900;10390;A prendre plus tard;0174037256;zen
+322;Pro Véhicules;2014;"Chelles 77500
+                ";11542;NA;28664;https://www.leboncoin.fr/voitures/1163364537.htm?ca=12_s;Zoe;22600;10600;A prendre plus tard;0677372750;life
+323;particulier;2015;"Paris 75116
+                ";12273;NA;6000;https://www.leboncoin.fr/voitures/1184849743.htm?ca=12_s;Zoe;24600;10990;A prendre plus tard;NA;intens
+324;Pro Véhicules;2017;"Brie-Comte-Robert 77170
+                ";15820;NA;1;https://www.leboncoin.fr/voitures/1183788805.htm?ca=12_s;Zoe;23900;16480;A prendre plus tard;0160625056;zen
+325;Pro Véhicules;2014;"Pantin 93500
+                ";9385;NA;23276;https://www.leboncoin.fr/voitures/1183337869.htm?ca=12_s;Zoe;24600;10590;A prendre plus tard;0174730257;intens
+326;particulier;2015;"Saint-Soupplets 77165
+                ";9601;NA;65000;https://www.leboncoin.fr/voitures/1183091992.htm?ca=12_s;Zoe;23900;10500;A prendre plus tard;NA;NA
+327;Pro Véhicules;2014;"Noisiel 77186
+                ";10205;NA;29306;https://www.leboncoin.fr/voitures/1182420995.htm?ca=12_s;Zoe;23900;10900;A prendre plus tard;0160059293;zen
+328;Pro Véhicules;2016;"Pantin 93500
+                ";14664;NA;6400;https://www.leboncoin.fr/voitures/1182361545.htm?ca=12_s;Zoe;23900;12999;A prendre plus tard;0183799581;zen
+329;Pro Véhicules;2016;"Paris 75015
+                ";14729;NA;100;https://www.leboncoin.fr/voitures/1138649404.htm?ca=12_s;Zoe;23900;11690;A prendre plus tard;0184030570;zen
+330;Pro Véhicules;2014;"Persan 95340
+                ";10688;NA;20205;https://www.leboncoin.fr/voitures/1180933261.htm?ca=12_s;Zoe;23900;10490;A prendre plus tard;0171025422;zen
+331;Pro Véhicules;2016;"Chelles 77500
+                ";11826;NA;1410;https://www.leboncoin.fr/voitures/1089980725.htm?ca=12_s;Zoe;22600;13990;A prendre plus tard;0677372750;life
+332;Pro Véhicules;2016;"Paris 75008
+                ";12569;NA;15000;https://www.leboncoin.fr/voitures/1159162168.htm?ca=12_s;Zoe;24600;14100;A prendre plus tard;0184030235;intens
+333;Pro Véhicules;2014;"Marseille 13008
+                ";9689;NA;9222;https://www.leboncoin.fr/voitures/1183787738.htm?ca=21_s;Zoe;24600;11490;A prendre plus tard;0422170199;intens
+334;Pro Véhicules;2014;"Arles 13200
+                ";11772;NA;25333;https://www.leboncoin.fr/voitures/1307026601.htm?ca=21_s;Zoe;22600;9490;A prendre plus tard;0490188023;life
+335;Pro Véhicules;2016;"Vitrolles 13127
+                ";11754;NA;7911;https://www.leboncoin.fr/voitures/1306026512.htm?ca=21_s;Zoe;22600;10990;A prendre plus tard;0805805802;life
+336;Pro Véhicules;2015;"Carpentras 84200
+                ";10138;NA;820;https://www.leboncoin.fr/voitures/1167913928.htm?ca=21_s;Zoe;22600;10700;A prendre plus tard;0675324710;life
+337;Pro Véhicules;2015;"Cannes 06400
+                ";12034;NA;16133;https://www.leboncoin.fr/voitures/1303278974.htm?ca=21_s;Zoe;24600;11590;A prendre plus tard;0481072130;intens
+338;Pro Véhicules;2014;"Cannes 06400
+                ";10338;NA;27158;https://www.leboncoin.fr/voitures/1303279043.htm?ca=21_s;Zoe;23900;9390;A prendre plus tard;0481072130;zen
+339;Pro Véhicules;2014;"La Seyne-sur-Mer 83500
+                ";9474;NA;51657;https://www.leboncoin.fr/voitures/1165215533.htm?ca=21_s;Zoe;23900;8900;A prendre plus tard;0494110548;zen
+340;Pro Véhicules;2016;"Vitrolles 13127
+                ";11754;NA;7911;https://www.leboncoin.fr/voitures/1186627191.htm?ca=21_s;Zoe;22600;10990;A prendre plus tard;0805805802;life
+341;Pro Véhicules;2013;"Aubagne 13400
+                ";8989;NA;41535;https://www.leboncoin.fr/voitures/1179055312.htm?ca=21_s;Zoe;23900;7500;A prendre plus tard;0422170191;zen
+342;Pro Véhicules;2016;"Vitrolles 13127
+                ";11800;NA;5500;https://www.leboncoin.fr/voitures/1183135194.htm?ca=21_s;Zoe;22600;11999;A prendre plus tard;06214945610;life
+343;particulier;2013;"Ventabren 13122
+                ";8035;NA;76000;https://www.leboncoin.fr/voitures/1183108008.htm?ca=21_s;Zoe;24600;7500;A prendre plus tard;NA;intens
+344;Pro Véhicules;2013;"Salon-de-Provence 13300
+                ";8486;NA;57314;https://www.leboncoin.fr/voitures/1182375223.htm?ca=21_s;Zoe;23900;7900;A prendre plus tard;0490421313;zen
+345;particulier;2013;" 24430
+                ";9237;NA;29500;https://www.leboncoin.fr/voitures/1305473373.htm?ca=2_s;Zoe;24600;8500;A prendre plus tard;NA;intens
+346;Pro Véhicules;2015;"Mérignac 33700
+                ";9671;NA;20942;https://www.leboncoin.fr/voitures/1120983863.htm?ca=2_s;Zoe;22600;9500;A prendre plus tard;0531081643;life
+347;Pro Véhicules;2014;"Dax 40100
+                ";8515;NA;42836;https://www.leboncoin.fr/voitures/1189408281.htm?ca=2_s;Zoe;24600;10590;A prendre plus tard;0558909010;intens
+348;Pro Véhicules;2015;"Bruges 33520
+                ";10110;NA;6791;https://www.leboncoin.fr/voitures/1073147421.htm?ca=2_s;Zoe;22600;9490;A prendre plus tard;0531081574;life
+349;particulier;2015;"Bayonne 64100
+                ";9234;NA;30000;https://www.leboncoin.fr/voitures/1186949629.htm?ca=2_s;Zoe;22600;14000;A prendre plus tard;NA;life
+350;Pro Véhicules;2016;"Mont-de-Marsan 40000
+                ";11804;NA;5145;https://www.leboncoin.fr/voitures/1184970315.htm?ca=2_s;Zoe;22600;12989;A prendre plus tard;0558464140;life
+351;Pro Véhicules;2016;"Pessac 33600
+                ";11830;NA;10;https://www.leboncoin.fr/voitures/1185361086.htm?ca=2_s;Zoe;22600;12990;A prendre plus tard;0531081450;life
+352;Pro Véhicules;2016;"Bruges 33520
+                ";11819;NA;3000;https://www.leboncoin.fr/voitures/1110866374.htm?ca=2_s;Zoe;22600;13500;A prendre plus tard;0516066011;life
+353;Pro Véhicules;2015;"Bruges 33520
+                ";9853;NA;17611;https://www.leboncoin.fr/voitures/1137265504.htm?ca=2_s;Zoe;22600;9500;A prendre plus tard;0531081574;life
+354;particulier;2016;"Gujan-Mestras 33470
+                ";11025;NA;32000;https://www.leboncoin.fr/voitures/1182673574.htm?ca=2_s;Zoe;22600;9500;A prendre plus tard;NA;life
+355;particulier;2013;"Créon 33670
+                ";8768;NA;46300;https://www.leboncoin.fr/voitures/1182279226.htm?ca=2_s;Zoe;23900;8200;A prendre plus tard;NA;NA

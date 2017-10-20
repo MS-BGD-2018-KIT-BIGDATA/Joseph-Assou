@@ -38,6 +38,7 @@ regexListId = r"(\d+).h"
 regexPrice = r"(\d+)\s"
 regexKM = r"(\d+)K"
 regexCP =r"(\d+)"
+regexTel = r"(\d(\s\-)?){10,11}"
 mod=[]
 loc=[]
 km=[]
@@ -47,6 +48,7 @@ email=[]
 modtyp=[]
 cote=[]
 Telephone=[]
+telfromdesc=[]
 prixneuf=[]
 vendeurtype=[]
 desclink=[]
@@ -167,6 +169,16 @@ def getModelfromDesc(des):
     modtyp.append(t)
     return t
 
+def getTelFromDesc(desc):
+    desclower = (str(desc).lower())
+    tel = re.search(regexTel, desclower)
+    if tel != None:
+        telfromdesc.append(tel.group(0))
+    else:
+        telfromdesc.append('NA')
+    
+
+
 def getTypeSeller(soup):
     TypeSeller = soup.find_all("span", class_="ispro")
     if TypeSeller != []:
@@ -179,7 +191,7 @@ def getTypeSeller(soup):
 def fillDataframe():
     dico =dict()
     dico = {'modele' :mod,'type':modtyp, 'année':year, 'kilometrage':km,'codepostal':loc, 'prix_vente':price, 'cote_affinée':cote,
-            'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email, 'lien' : desclink}
+            'prix_neuf':prixneuf, 'TypeVendeur':vendeurtype,'telephone':Telephone,'email':email, 'lien' : desclink, 'telfromdesc': telfromdesc}
     DataZoe = pd.DataFrame(dico)
     DataZoe.to_csv('/home/joseph/Dropbox/DeepLearning/Programmation/Python/KitDataScience/Joseph-Assouline/Lesson5/DataZoe.csv',  sep=';')
     
@@ -210,10 +222,8 @@ def getPhoneNumber(url):
               'Accept-Encoding': 'gzip, deflate, br',
               'Accept-Language': 'fr-FR,fr;q=0.8,en-US;q=0.6,en;q=0.4,it;q=0.2'}
     datainput = "list_id="+listeid+"&app_id=leboncoin_web_utils&key=54bb0281238b45a03f0ee695f73e704f&text=1"                                                      
-    attente = np.random.randint(5,15)
-#    time.sleep(attente)
-      
-
+    attente = np.random.randint(10,20)
+    time.sleep(attente)    
     res = requests.post(urlapi, headers=headers, data=datainput)
     if (res.status_code ==200) :
         data = js.loads(res.text)
@@ -227,7 +237,7 @@ def getPhoneNumber(url):
     else:
         Tel = "A prendre plus tard"    
     attente = np.random.randint(3,10)
-#    time.sleep(attente)
+    time.sleep(attente)
     print(Tel)
     Telephone.append(Tel)
      
@@ -279,8 +289,8 @@ def getCote(modelfeatures,r):
 
 def getAllPageFeature(desc,r):
     listfeatures=[]
-#    attente = np.random.randint(5,15)
-#    time.sleep(attente)
+    attente = np.random.randint(5,15)
+    time.sleep(attente)
     for url in desc:
         print(url)
         soupPA = getSoupAnnonce(url)
@@ -289,6 +299,7 @@ def getAllPageFeature(desc,r):
         getTypeSeller(soupPA)
         d = getDesc(soupPA)
         getContactFromDesc(d)
+        getTelFromDesc(d)
         getPhoneNumber(url)
         modelfeatures = [getModelfromDesc(d),
                          getYear(listfeatures), getKM(listfeatures), getloc(listfeatures)]
@@ -311,7 +322,6 @@ def main():
         getAllPageFeature(desc, r)
         fillDataframe()
         for link in NextLink:
-#            print(NextLink[i])
             souplistpa = getPetitesAnnoncesSuite(link)      
             getPrice(souplistpa)
             desc=getPetitesAnnonceDescLink(souplistpa)
@@ -319,5 +329,5 @@ def main():
             fillDataframe()
             i+=1
    
-#test()
+
 main()
