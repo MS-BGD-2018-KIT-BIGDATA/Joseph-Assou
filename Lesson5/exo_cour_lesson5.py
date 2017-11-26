@@ -44,6 +44,9 @@ regexNumber = r"\(d+)"
 regexAge = r"(\d+)\sans"
 regexunit =r"\d+(.*)"
 #pd.tonumeric
+#pd.groupby.agg
+#pd.apply
+#pd.transform
 
 
 def getYearandMonth(data):
